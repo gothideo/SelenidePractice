@@ -1,0 +1,1260 @@
+<html lang="ja" data-initial-state="{}" itemtype="http://schema.org/Article" itemscope="" data-version="ca057f7d39f4cbf0098502c82262628b" data-static-domain="https://cdn.blog.st-hatena.com" data-sentry-sample-rate="0.1" data-sentry-environment="production" data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218" data-router-type="blogs" data-pro="false" data-plus-available="" data-parts-domain="https://hatenablog-parts.com" data-page="entry" data-has-touch-view="1" data-globalheader-type="pc" data-globalheader-color="b" data-global-domain="https://hatenablog.com" data-dont-recommend-pro="false" data-device="pc" data-data-layer='{"hatenablog":{"permalink_entry":{"author_name":"nave_kazu","title":"Selenide\u3092\u8a66\u3057\u305f","hour":"17","categories":"/IT\u7cfb\t/Java","date":"2016-12-12","uri":"http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"},"brand":"hatenablog","blog":{"force_pc_view":"false","is_sleeping":"false","entry_show_footer_related_entries":"true","is_public":"true","name":"\u306a\u3079\u2019s blog","uri":"http://nave-kazu.hatenablog.com/","is_responsive_view":"false","content_seems_japanese":"true","enable_ads":"true","owner_name":"nave_kazu","disable_ads":"","lang":"ja","enable_keyword_link":"true"},"page_id":"entry","analytics":{"brand_property_id":"","separated_property_id":"UA-29716941-21","property_id":"","non_sampling_property_id":""},"admin":{},"pro":"free","router_type":"blogs"}}' data-brand="hatenablog" data-blogs-uri-base="http://nave-kazu.hatenablog.com" data-blog-uuid="8454420450073000284" data-blog-uri="http://nave-kazu.hatenablog.com/" data-blog-owner="nave_kazu" data-blog-name="なべ’s blog" data-blog-is-public="1" data-blog-host="nave-kazu.hatenablog.com" data-blog="nave-kazu.hatenablog.com" data-avail-langs="ja en" data-author="nave_kazu" data-admin-origin="https://blog.hatena.ne.jp" data-admin-domain="//blog.hatena.ne.jp"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><script src="https://connect.facebook.net/signals/config/1733466696949178?v=2.9.18&amp;r=stable" async=""></script><script src="https://connect.facebook.net/en_US/fbevents.js" async=""></script><script src="//static.ads-twitter.com/uwt.js" async=""></script><script src="//in.treasuredata.com/js/v3/event/cosmi_8045/pageviews?api_key=312%2Fb4f0042d7c26b4f44d2561bbb5c396349b54b10e&amp;data=eyJpbWlkIjoidkpIWFFzeklRTFdESXVtRU9UTnUxUSIsInNlZ21lbnRfZWlkcyI6IiIsInRkX2NsaWVudF9pZCI6IjE0YmRjMTk2LTY2YzktNDU5Mi1lMzdmLWQ0MDBiOTY2OThmNyIsInRkX2NoYXJzZXQiOiJ1dGYtOCIsInRkX2xhbmd1YWdlIjoiamEtanAiLCJ0ZF9jb2xvciI6IjI0LWJpdCIsInRkX3NjcmVlbiI6IjE5MjB4MTA4MCIsInRkX3RpdGxlIjoiU2VsZW5pZGXjgpLoqabjgZfjgZ8gLSDjgarjgbnigJlzIGJsb2ciLCJ0ZF91cmwiOiJodHRwOi8vbmF2ZS1rYXp1LmhhdGVuYWJsb2cuY29tL2VudHJ5LzIwMTYvMTIvMTIvMTcxNDQ1IiwidGRfaG9zdCI6Im5hdmUta2F6dS5oYXRlbmFibG9nLmNvbSIsInRkX3BhdGgiOiIvZW50cnkvMjAxNi8xMi8xMi8xNzE0NDUiLCJ0ZF9yZWZlcnJlciI6IiIsInRkX2lwIjoidGRfaXAiLCJ0ZF9icm93c2VyIjoidGRfYnJvd3NlciIsInRkX2Jyb3dzZXJfdmVyc2lvbiI6InRkX2Jyb3dzZXJfdmVyc2lvbiIsInRkX29zIjoidGRfb3MiLCJ0ZF9vc192ZXJzaW9uIjoidGRfb3NfdmVyc2lvbiIsInRkX3ZpZXdwb3J0IjoiLSJ9&amp;modified=1589673207375&amp;callback=TDIM.callback.tij15896732073755437.td_callback" type="text/javascript" async=""></script><script src="//sync.im-apps.net/imid/segment?token=omO0CDJd98sxiIkb8Mzm7Q&amp;callback=TDIM.callback.tij15896732073755437.im_callback" type="text/javascript" async=""></script><script src="//www.googletagmanager.com/gtm.js?id=GTM-P5GX4M" async=""></script><script src="https://static.criteo.net/js/ld/publishertag.prebid.js" type="text/javascript" async=""></script><script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="//in.ybi.idcfcloud.net/js/v3/event/cosmi_6604/pageviews?api_key=312%2Fb4f0042d7c26b4f44d2561bbb5c396349b54b10e&amp;data=eyJjdXN0b21fZGF0YSI6IkphdmEsSFRNTCxqUXVlcnkiLCJpbWlkIjoiajk5OXBvX1NRcHU5NG9keTFrQ1o3ZyIsInNlZ21lbnRfZWlkcyI6IiIsInRkX2NsaWVudF9pZCI6IjE0YmRjMTk2LTY2YzktNDU5Mi1lMzdmLWQ0MDBiOTY2OThmNyIsInRkX2NoYXJzZXQiOiJ1dGYtOCIsInRkX2xhbmd1YWdlIjoiamEtanAiLCJ0ZF9jb2xvciI6IjI0LWJpdCIsInRkX3NjcmVlbiI6IjE5MjB4MTA4MCIsInRkX3RpdGxlIjoiU2VsZW5pZGXjgpLoqabjgZfjgZ8gLSDjgarjgbnigJlzIGJsb2ciLCJ0ZF91cmwiOiJodHRwOi8vbmF2ZS1rYXp1LmhhdGVuYWJsb2cuY29tL2VudHJ5LzIwMTYvMTIvMTIvMTcxNDQ1IiwidGRfaG9zdCI6Im5hdmUta2F6dS5oYXRlbmFibG9nLmNvbSIsInRkX3BhdGgiOiIvZW50cnkvMjAxNi8xMi8xMi8xNzE0NDUiLCJ0ZF9yZWZlcnJlciI6IiIsInRkX2lwIjoidGRfaXAiLCJ0ZF9icm93c2VyIjoidGRfYnJvd3NlciIsInRkX2Jyb3dzZXJfdmVyc2lvbiI6InRkX2Jyb3dzZXJfdmVyc2lvbiIsInRkX29zIjoidGRfb3MiLCJ0ZF9vc192ZXJzaW9uIjoidGRfb3NfdmVyc2lvbiIsInRkX3ZpZXdwb3J0IjoiLSJ9&amp;modified=1589673195808&amp;callback=TDIM.callback.tij15896731958083937.td_callback" type="text/javascript" async=""></script><script src="//sync.im-apps.net/imid/get?callback=_audiencedata_.pv&amp;need_created=True" type="text/javascript" async=""></script><script src="http://cdn.treasuredata.com/sdk/td-1.5.1.js" type="text/javascript" async=""></script><script src="//sync.im-apps.net/imid/segment?token=TlOjMPj_m54xiIkb8Mzm7Q&amp;callback=TDIM.callback.tij15896731958083937.im_callback" type="text/javascript" async=""></script><script src="//cf.im-apps.net/sdk/tdim-1.1.0.min.js" async=""></script><script src="http://www.googletagmanager.com/gtm.js?id=GTM-PWRB9N&amp;l=itm_dl1" type="text/javascript" async=""></script><script src="http://cnt.fout.jp/segapi/audience?callback=_itm_.sa_cb&amp;cvid=mHDmdffSCFxfWgmjsQ" type="text/javascript" async=""></script><script src="https://www.gstatic.com/recaptcha/releases/JPZ52lNx97aD96bjM7KaA0bo/recaptcha__ja.js" type="text/javascript" async=""></script><script src="https://connect.facebook.net/ja_JP/sdk.js?hash=50bf0079649199f373ce21b95ba7a59c&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script src="https://www.hatena.ne.jp/notify/notices.count.json?services=1&amp;callback=jQuery112408499869490643663_1589673193447&amp;_=1589673193448" async=""></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large">
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11">
+  <title>Selenideを試した - なべ’s blog</title>
+
+  
+  <link href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" rel="canonical">
+
+
+
+  
+  
+
+<meta content="Selenideを試した - なべ’s blog" itemprop="name">
+
+  <meta content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" itemprop="image">
+
+
+  <meta content="Selenideを試した - なべ’s blog" property="og:title">
+<meta content="article" property="og:type">
+  <meta content="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" property="og:url">
+
+  <meta content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" property="og:image">
+
+<meta content="Selenideを試した - なべ’s blog" property="og:image:alt">
+    <meta content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄ (@backpaper0) 2016年12月2日これを拝聴して便利に感じたので試してみた。スライドはこちら。 Try Selenide Selenideとは？ SelenideはSelenum WebDriverをラップしたブラウザテストの自動化フレームワークのこと。 Sele…" property="og:description">
+<meta content="なべ’s blog" property="og:site_name">
+
+  <meta content="1481530485" property="article:published_time">
+
+    <meta content="/IT系" property="article:tag">
+    <meta content="/Java" property="article:tag">
+      <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png">  <meta name="twitter:title" content="Selenideを試した - なべ’s blog">    <meta name="twitter:description" content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄…">  <meta name="twitter:app:name:iphone" content="はてなブログアプリ">
+  <meta name="twitter:app:id:iphone" content="583299321">
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445">
+  
+    <meta name="description" content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄ (@backpaper0) 2016年12月2日これを拝聴して便利に感じたので試してみた。スライドはこちら。 Try Selenide Selenideとは？ SelenideはSelenum WebDriverをラップしたブラウザテストの自動化フレームワークのこと。 Sele…">
+
+
+  
+<script id="facebook-jssdk" src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;appId=719729204785177&amp;version=v2.7"></script><script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script><script src="http://www.googletagmanager.com/gtag/js?id=G-2M21NTEWEJ&amp;l=dataLayer&amp;cx=c" type="text/javascript" async=""></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-P4CXTW" async=""></script><script id="embed-gtm-data-layer-loader" data-data-layer-page-specific='{"hatenablog":{"blogs_permalink":{"blog_hide_afc_func":"false","entry_afc_issued":"false","is_blog_sleeping":"false","is_author_pro":"false","blog_struct_hide_afc":"false","has_related_entries_with_elasticsearch":"true","brand_hide_afc":"false","blog_hide_afc_field":"false","blog_afc_issued":"false"}}}'>
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+  <link href="http://nave-kazu.hatenablog.com/favicon" rel="shortcut icon">
+<link href="https://cdn.blog.st-hatena.com/images/touch-icon-iphone-retina.png" rel="apple-touch-icon">
+<link href="https://cdn.blog.st-hatena.com/images/common/meta-icon-global.png" rel="icon" sizes="192x192">
+
+  
+
+<link title="Atom" href="http://nave-kazu.hatenablog.com/feed" rel="alternate" type="application/atom+xml">
+<link title="RSS2.0" href="http://nave-kazu.hatenablog.com/rss" rel="alternate" type="application/rss+xml">
+<link title="oEmbed Profile of Selenideを試した" href="https://hatenablog.com/oembed?url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;format=json" rel="alternate" type="application/json+oembed">
+<link title="oEmbed Profile of Selenideを試した" href="https://hatenablog.com/oembed?url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;format=xml" rel="alternate" type="text/xml+oembed">
+  
+  <link href="http://www.hatena.ne.jp/nave_kazu/" rel="author">
+
+  
+
+
+  
+    <link href="https://cdn.blog.st-hatena.com/css/blog.css?version=d43439952f020f6c8eeda20dc8e7244c6a41d9ba&amp;env=production" rel="stylesheet" type="text/css">
+
+    
+  <link href="https://usercss.blog.st-hatena.com/blog_style/8454420450073000284/6767bd002f1cc7e943c4b832aefa846a228a2cdc" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+    <script src="https://cdn.pool.st-hatena.com/valve/valve.js" async=""></script>
+<script id="test-valve-definition">
+  var valve = window.valve || [];
+
+  valve.push(function(v) {
+    v.config({
+      service: 'blog',
+      content: {
+        result: 'adtrust',
+        documentIds: ["blog:entry:10328749687198103198"]
+      }
+    });
+    v.defineDFPSlot({"lazy":"","sizes":[[300,250],[336,280],[468,60],"fluid"],"slotId":"google_afc_user_container_0","unit":"/4374287/blog_user"});
+    v.sealDFPSlots();
+  });
+</script>
+
+  
+
+  
+<script src="https://platform.twitter.com/js/moment~timeline~tweet.4b4530aef3cb5159868348e8a492de60.js" charset="utf-8"></script><script src="https://platform.twitter.com/js/tweet.d9fbeaac3a8ebd6a63dcb70064957d89.js" charset="utf-8"></script><script src="https://platform.twitter.com/js/button.a9e51eea566eab199c00950f37200d0b.js" charset="utf-8"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" type="text/javascript" async=""></script><script src="//dmp.im-apps.net/js/6604/0001/itm.js" type="text/javascript" async=""></script><script src="//cdn.bigmining.com/private/js/hatena_bigmining.js" type="text/javascript" async=""></script><script src="https://www.googletagservices.com/tag/js/gpt.js" type="text/javascript" async=""></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020050602.js" async=""></script><link href="https://57d91d66fc8f49b2d3f336c98da1de77.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html" rel="prefetch"><link href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html" rel="prefetch"><script src="https://s.hatena.ne.jp/entries.json?no_comments=1&amp;uri=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;timestamp=1&amp;callback=Ten.JSONP.callback" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+
+  <body class="page-entry category-/IT系 category-/Java">
+    
+
+    <div id="globalheader-container" data-brand="hatenablog">
+  <iframe height="37" id="globalheader" src="" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="http://nave-kazu.hatenablog.com/">なべ’s blog</a></h1>
+      
+    </div>
+  </div>
+</header>
+
+        
+
+        
+        
+
+
+
+
+<div class="hfeed" id="content">
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-5600 words-400 mode-hatena entry-odd" id="entry-10328749687198103198" data-publication-type="entry" data-uuid="10328749687198103198" data-keyword-campaign="">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="http://nave-kazu.hatenablog.com/archive/2016/12/12" rel="nofollow">
+      <time title="2016-12-12T08:14:45Z" datetime="2016-12-12T08:14:45Z" pubdate="">
+        <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">12</span><span class="hyphen">-</span><span class="date-day">12</span>
+      </time>
+    </a>
+  </div>
+  <h1 class="entry-title">
+  <a class="entry-title-link bookmark" href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445">Selenideを試した</a>
+</h1>
+
+  
+  
+
+  <div class="entry-categories categories">
+    
+    <a class="entry-category-link category-/IT系" href="http://nave-kazu.hatenablog.com/archive/category/%2FIT%E7%B3%BB">/IT系</a>
+    
+    <a class="entry-category-link category-/Java" href="http://nave-kazu.hatenablog.com/archive/category/%2FJava">/Java</a>
+    
+  </div>
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content">
+  
+    <p>先日参加した <a href="http://www.java-users.jp/ccc2016fall/">JJUG CCC 2016 FALL</a> で、うらがみさんがSelenideの発表をしていた。</p><iframe class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" frameborder="0" scrolling="no" allowfullscreen="true" style="padding: 0px; border: medium; border-image: none; width: 0px; height: 0px; display: block; visibility: hidden; position: absolute;" allowtransparency="true"></iframe><blockquote class="twitter-tweet twitter-tweet-error" data-lang="ja" data-twitter-extracted-i1589673193405191505="true"><p lang="ja" dir="ltr">明日は<a class="keyword" href="http://d.hatena.ne.jp/keyword/JJUG">JJUG</a> CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） <a href="https://t.co/q64G2cm42m">https://t.co/q64G2cm42m</a> <a href="https://twitter.com/hashtag/ccc_c6?src=hash&amp;ref_src=twsrc%5Etfw">#ccc_c6</a></p>— うらがみ⛄ (@backpaper0) <a href="https://twitter.com/backpaper0/status/804659096175554560?ref_src=twsrc%5Etfw">2016年12月2日</a></blockquote><script src="//platform.twitter.com/widgets.js" charset="utf-8" async=""></script><p></p><p>これを拝聴して便利に感じたので試してみた。</p><p>スライドはこちら。<br>
+<a href="http://backpaper0.github.io/ghosts/try-selenide/index.html">Try Selenide</a><br>
+</p>
+
+<div class="section">
+    <h3>Selenideとは？</h3>
+    <p><a href="http://selenide.org/">Selenide</a>はSelenum WebDriverをラップしたブラウザテストの自動化<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>のこと。<br>
+<a href="http://www.seleniumhq.org/projects/webdriver/">Selenum WebDriver</a>は各種ブラウザのWebDriver <a class="keyword" href="http://d.hatena.ne.jp/keyword/API">API</a>を呼び出す、これも自動化<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>。<br>
+<a href="https://www.w3.org/TR/webdriver/">WebDriver</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/W3C">W3C</a>規格なのでプロプラではなくオープンな<a class="keyword" href="http://d.hatena.ne.jp/keyword/API">API</a>と言える。</p><p>テスト対象のアプリからSelenum WebDriverをラップしたSelenideを呼び出し、Selenum WebDriverは各種ブラウザごとのWebDriverを呼び出すことで、ブラウザからテスト対象のアプリを実行する、というのが全体の流れ。<br>
+<span itemtype="http://schema.org/Photograph" itemscope=""><img title="f:id:nave_kazu:20161207152321p:plain" class="hatena-fotolife" alt="f:id:nave_kazu:20161207152321p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" itemprop="image"></span><br>
+</p>
+
+</div>
+<div class="section">
+    <h3>各種ブラウザのWebDriverを準備する</h3>
+    <p>Selenide/Selenum WebDriverを使うには、まずテスト対象の各種ブラウザのWebDriverを仕込まないとならない。</p><p>Selenum WebDriverのサイトに各種ブラウザのWebDriverダウンロード先が記載してあるので、そこから目的のブラウザのWebDriverをダウンロードする。<br>
+<a href="http://www.seleniumhq.org/download/#thirdPartyDrivers">Selenum WebDriver - Third Party Browser Drivers</a></p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>なら<a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a>。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>なら<a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a>。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>はSelenumが提供しているらしく、<a href="http://www.seleniumhq.org/download/">Selenum WebDriver - Downloads</a>の「The <a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a> Driver Server」にある。<br>
+Edgeからは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>が提供しているらしく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>のサイト<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">WebDriver - Microsoft Edge Development</a> にある。</p><p>ダウンロードしたWebDriverは展開して適当なフォルダに保存する。<br>
+今回試したのは32bit <a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>環境なので、上のサイトから32bit <a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>用の<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>のWebDriverをダウンロードして「C:\SeleniumDriver」に保存した。</p>
+
+</div>
+<div class="section">
+    <h3>ビルド<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">スクリプト</a>の準備と依存関係の追加</h3>
+    <p>ビルド<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">スクリプト</a>を用意し、Selenideを含む関連するライブラリを依存関係に記述する。<br>
+関連するライブラリは、Selenide内で使用しているSLF4Jの実装と、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%B1%C2%CE%A5%C6%A5%B9%A5%C8">単体テスト</a>スイートとして<a class="keyword" href="http://d.hatena.ne.jp/keyword/JUnit">JUnit</a>になる。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Maven">Maven</a>のpom.<a class="keyword" href="http://d.hatena.ne.jp/keyword/xml">xml</a>は下記の通り。</p>
+<pre class="code lang-xml" data-lang="xml" data-unlink=""><span class="synIdentifier">&lt;dependencies&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>org.slf4j<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>slf4j-simple<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>1.7.21<span class="synIdentifier">&lt;/version&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>junit<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>junit<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>4.12<span class="synIdentifier">&lt;/version&gt;</span>
+    <span class="synIdentifier">&lt;scope&gt;</span>test<span class="synIdentifier">&lt;/scope&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>com.codeborne<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>selenide<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>4.0<span class="synIdentifier">&lt;/version&gt;</span>
+    <span class="synIdentifier">&lt;scope&gt;</span>test<span class="synIdentifier">&lt;/scope&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+<span class="synIdentifier">&lt;/dependencies&gt;</span>
+</pre><p>Gradleのbuild.gradleは下記の通り。</p>
+<pre class="code lang-groovy" data-lang="groovy" data-unlink="">dependencies {
+  compile <span class="synConstant">"org.slf4j:slf4j-simple:1.7.21"</span>
+  testCompile <span class="synConstant">"junit:junit:4.12"</span>
+  testCompile <span class="synConstant">"com.codeborne:selenide:4.0"</span>
+}
+</pre>
+</div>
+<div class="section">
+    <h3>テストクラスの用意とSelenide/Selenum WebDriverの設定</h3>
+    <p>まず<a class="keyword" href="http://d.hatena.ne.jp/keyword/JUnit">JUnit</a>から呼ばれるテストクラスを用意し、テストクラスの初期化メソッドを定義する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink=""><span class="synType">public</span> <span class="synType">class</span> AppTest {
+    <span class="synPreProc">@BeforeClass</span>
+    <span class="synType">public</span> <span class="synType">static</span> <span class="synType">void</span> beforeClass() <span class="synType">throws</span> Exception {
+    }
+}
+</pre><p>続いて初期化メソッドにSelenideとSelenum WebDriverの設定をする。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@BeforeClass</span>
+    <span class="synType">public</span> <span class="synType">static</span> <span class="synType">void</span> beforeClass() <span class="synType">throws</span> Exception {
+        <span class="synComment">// WebDriverのパスを設定</span>
+        System.setProperty(<span class="synConstant">"webdriver.ie.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">IEDriverServer.exe"</span>);
+        System.setProperty(<span class="synConstant">"webdriver.gecko.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">geckodriver.exe"</span>);
+        System.setProperty(<span class="synConstant">"webdriver.chrome.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">chromedriver.exe"</span>);
+
+        <span class="synComment">// テスト結果の出力先</span>
+        Configuration.reportsFolder = <span class="synConstant">"test-result/reports"</span>;
+
+        <span class="synComment">// 使用するブラウザの指定</span>
+<span class="synComment">//        Configuration.browser = WebDriverRunner.INTERNET_EXPLORER;</span>
+<span class="synComment">//        Configuration.browser = WebDriverRunner.FIREFOX;</span>
+        Configuration.browser = WebDriverRunner.CHROME;
+    }
+</pre><p>System.setProperty()で、ダウンロードした<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>のWebDriverのパスを設定する。</p><p>Configuration.reportsFolderで、テスト結果（<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>など）の保存先を指定する。<br>
+今回は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>で指定しているので、テスト実行時のカレントフォルダにConfiguration.reportsFolderで指定したフォルダが作成される。</p><p>Configuration.browserで、テストするブラウザを指定する。WebDriverRunner.<a class="keyword" href="http://d.hatena.ne.jp/keyword/CHROME">CHROME</a>を指定しているので、テストを実行すると、chromedriver.exeを経由して<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>ブラウザが立ち上がってテストが行われる。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>でテストする場合はWebDriverRunner.INTERNET_EXPLORERを指定して、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>でテストする場合はWebDriverRunner.<a class="keyword" href="http://d.hatena.ne.jp/keyword/FIREFOX">FIREFOX</a>を指定する。<br>
+（うらがみさんは使用するブラウザを実行時引数で指定していたので、その方法はうらがみさんのスライドを参照）</p>
+
+</div>
+<div class="section">
+    <h3>テストメソッドの用意</h3>
+    <p>今回は以下の手順のテストを行う。</p>
+
+<ul>
+<li><a href="http://www.yahoo.co.jp/">http://www.yahoo.co.jp/</a>にアクセスする</li>
+<li>検索ワードに「selenide」を入力する</li>
+<li>検索を実行する</li>
+<li>「selenide」の検索結果が出力されているか検証する</li>
+</ul><p>最後に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>を保存する。</p><p>まずはテストクラスにテストメソッドを用意する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+    }
+</pre><p>テスト対象のメソッドに@Testを付ける。</p><p><a href="http://www.yahoo.co.jp/">http://www.yahoo.co.jp/</a>にアクセスする処理を記述する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+    }
+</pre><p>staticインポートしたopen()メソッドにアクセスするURLを指定する。</p><p>次に、検索ワードに「selenide」を入力する処理を記述する。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Yahoo%21">Yahoo!</a>の検索ワードは下記のHTMLで表現されている。</p>
+<pre class="code lang-html" data-lang="html" data-unlink=""><span class="synIdentifier">&lt;</span><span class="synStatement">input</span><span class="synIdentifier"> </span><span class="synType">name</span><span class="synIdentifier">=</span><span class="synConstant">"p"</span><span class="synIdentifier"> </span><span class="synType">id</span><span class="synIdentifier">=</span><span class="synConstant">"srchtxt"</span><span class="synIdentifier"> </span><span class="synType">type</span><span class="synIdentifier">=</span><span class="synConstant">"text"</span><span class="synIdentifier"> </span><span class="synType">value</span><span class="synIdentifier">=</span><span class="synConstant">""</span><span class="synIdentifier">&gt;</span>
+</pre><p>なので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BB%A5%EC%A5%AF%A5%BF">セレクタ</a>でID「srchtxt」を検索し、そこに値「selenide」を入れる処理を記述することになる。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+    }
+</pre><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/jQuery">jQuery</a>風の$メソッドでDOM要素を選択して、val()メソッドで値を入れる。</p><p>さらに、検索を実行する処理を記述する。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Yahoo%21">Yahoo!</a>の検索ボタンは下記のHTMLで表現されている。</p>
+<pre class="code lang-html" data-lang="html" data-unlink=""><span class="synIdentifier">&lt;/</span><span class="synStatement">label</span><span class="synIdentifier">&gt;&lt;</span><span class="synStatement">input</span><span class="synIdentifier"> </span><span class="synType">type</span><span class="synIdentifier">=</span><span class="synConstant">"submit"</span><span class="synIdentifier"> </span><span class="synType">id</span><span class="synIdentifier">=</span><span class="synConstant">"srchbtn"</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">"srchbtn"</span><span class="synIdentifier"> </span><span class="synType">value</span><span class="synIdentifier">=</span><span class="synConstant">"検索"</span><span class="synIdentifier">&gt;</span>
+</pre><p>先ほどと同様に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BB%A5%EC%A5%AF%A5%BF">セレクタ</a>でID「srchbtn」を検索し、クリックを実行するclick()メソッドを呼び出す。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+    }
+</pre><p>その後、検索結果のHTMLのbody部に「selenide」の検索結果が出力されているか確認する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+
+        $(<span class="synConstant">"body"</span>).shouldHave(text(<span class="synConstant">"Selenide: concise UI tests in Java - このページを和訳"</span>));
+    }
+</pre><p>最後に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>を保存する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+
+        $(<span class="synConstant">"body"</span>).shouldHave(text(<span class="synConstant">"Selenide: concise UI tests in Java - このページを和訳"</span>));
+        screenshot(<span class="synConstant">"selenideTest"</span>);
+    }
+</pre><p>今回は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>で指定しているので、テスト実行時のカレントフォルダにConfiguration.reportsFolderで指定したフォルダが作成される。</p>
+
+</div>
+<div class="section">
+    <h3>テストの実行</h3>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Maven">Maven</a>で実行する場合、下記を実行する。</p>
+<pre class="code lang-dosbatch" data-lang="dosbatch" data-unlink="">mvn test
+</pre><p>Gradleで実行する場合、下記を実行する。</p>
+<pre class="code lang-dosbatch" data-lang="dosbatch" data-unlink="">gradle test
+</pre><p>どちらの場合でも、ブラウザが立ち上がって（今回の場合は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>）、検索ワード「selenide」を入れて、検索して、検索結果が表示されて、ブラウザが終了してテストが正常終了すると思う。</p><p>テスト結果を保存しているはずなので、カレントフォルダの「test-result/reports」を見てみると、「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」と「selenideTest.html」が出来ている。<br>
+「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>の画像イメージで、「selenideTest.html」はその時のHTML。両方撮ってくれる。</p><p>「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」はこんな感じ。<br>
+<span itemtype="http://schema.org/Photograph" itemscope=""><img title="f:id:nave_kazu:20161212113408p:plain" class="hatena-fotolife" alt="f:id:nave_kazu:20161212113408p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161212/20161212113408.png" itemprop="image"></span></p><p></p>
+
+</div>
+<div class="section">
+    <h3>最後に</h3>
+    <p>駆け足に試したが、Selenideいいね。<br>
+今後も使うと思う。</p><p>うらがみさんのスライドの中では他に、ページオブジェクトパターンや<a class="keyword" href="http://d.hatena.ne.jp/keyword/Selenium">Selenium</a>が提供しているDockerイメージを使ったテストなども紹介している。<br>
+これらも試してみようと思う。</p>
+
+</div>
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <p class="entry-footer-section">
+  <span class="author vcard"><span class="fn" data-user-name="nave_kazu" data-load-nickname="1">nave_kazu</span></span>
+  <span class="entry-footer-time"><a href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"><time title="2016-12-12T08:14:45Z" class="updated" datetime="2016-12-12T08:14:45Z" pubdate="" data-relative="">3年前</time></a></span>
+</p>
+
+    
+  <div class="hatena-star-container">
+  <span class="hatena-star-comment-container"><img tabindex="0" title="Comments" class="hatena-star-comment-button" style="margin: 0px; padding: 0px; border: medium; border-image: none; vertical-align: middle; display: none; cursor: pointer;" alt="Comments" src="https://s.hatena.ne.jp/images/comment.gif"></span><span class="hatena-star-star-container"><img tabindex="0" title="Add Star" class="hatena-star-add-button" style="margin: 0px 3px; padding: 0px; border: medium; border-image: none; vertical-align: middle; cursor: pointer;" alt="Add Star" src="https://cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.svg?version=ca057f7d39f4cbf0098502c82262628b"><a href="//blog.hatena.ne.jp/kyohei-yaa/"><span class="hatena-big-star-star-container"><img tabindex="0" class="hatena-star-user" style="padding: 0px; border: medium; border-image: none;" src="https://cdn.profile-image.st-hatena.com/users/kyohei-yaa/profile.png"><img tabindex="0" title="" class="hatena-star-star" style="padding: 0px; border: medium; border-image: none;" alt="kyohei-yaa" src="https://s.hatena.ne.jp/images/star.gif"></span></a><a href="//blog.hatena.ne.jp/siwamot/"><span class="hatena-big-star-star-container"><img tabindex="0" class="hatena-star-user" style="padding: 0px; border: medium; border-image: none;" src="https://cdn.profile-image.st-hatena.com/users/siwamot/profile.png"><img tabindex="0" title="" class="hatena-star-star" style="padding: 0px; border: medium; border-image: none;" alt="siwamot" src="https://s.hatena.ne.jp/images/star.gif"></span></a></span></div>
+  <div class="hatena-star-metadata" style="display: none">
+    <a class="hatena-star-permalink" href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445">Selenideを試した</a>
+  </div>
+
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <iframe width="84" height="40" title="この記事をはてなブックマークに追加" class="hatena-bookmark-button-frame" src="javascript:false" frameborder="0" scrolling="no" style="width: 84px; height: 40px;"></iframe>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" data-layout="box_count" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="width: 69px; height: 40px; vertical-align: bottom;"><iframe name="f2498b3dc561cdc" width="1000px" height="1000px" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/share_button.php?app_id=719729204785177&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df2c18dcb4ad4b88%26domain%3Dnave-kazu.hatenablog.com%26origin%3Dhttp%253A%252F%252Fnave-kazu.hatenablog.com%252Ff3fee2e85ffc92c%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey" frameborder="0" scrolling="no" allowfullscreen="true" style="border: medium; border-image: none; width: 69px; height: 40px; visibility: visible;" allowtransparency="true" data-testid="fb:share_button Facebook Social Plugin" allow="encrypted-media"></iframe></span></div>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <iframe title="Twitter Tweet Button" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" id="twitter-widget-1" src="https://platform.twitter.com/widgets/tweet_button.2a008290075125adde2d7b849b06a0bb.ja.html#dnt=false&amp;id=twitter-widget-1&amp;lang=ja&amp;original_referer=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;size=m&amp;text=Selenide%E3%82%92%E8%A9%A6%E3%81%97%E3%81%9F%20-%20%E3%81%AA%E3%81%B9%E2%80%99s%20blog&amp;time=1589673195175&amp;type=share&amp;url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 75px; height: 20px; visibility: visible; position: static;" allowtransparency="true" data-url="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"></iframe>
+    </div>
+  
+  
+  
+  
+</div>
+
+    
+  
+  
+    
+    <div class="google-afc-image test-google-rectangle-ads">      
+      
+      <div class="google-afc-user-container google_afc_blocklink2_5 google_afc_boder" id="google_afc_user_container_0" data-test-unit="/4374287/blog_user" data-google-query-id="CPGIrJHKuekCFau_lgods2gI1A"><div id="google_ads_iframe_/4374287/blog_user_0__container__" style="border: 0pt; border-image: none; width: 300px; height: 250px; display: inline-block;"><iframe width="300" height="250" title="3rd party ad content" id="google_ads_iframe_/4374287/blog_user_0" src="https://57d91d66fc8f49b2d3f336c98da1de77.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px; border-image: none; vertical-align: bottom;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-is-safeframe="true" data-google-container-id="1" data-load-complete="true"></iframe></div></div>
+      
+        <a class="open-pro-modal" href="http://blog.hatena.ne.jp/guide/pro" data-guide-pro-modal-ad-url="https://hatenablog.com/guide/pro/modal/ad">広告を非表示にする</a>
+      
+    </div>
+  
+  
+
+
+    <div class="customized-footer">
+      
+
+        
+
+        
+
+          <div class="entry-footer-modules" id="entry-footer-secondary-modules">      
+<div class="hatena-module hatena-module-related-entries">
+      
+  <!-- Hatena-Epic-has-related-entries-with-elasticsearch:true -->
+  <div class="hatena-module-title">
+    関連記事
+  </div>
+  <div class="hatena-module-body">
+    <ul class="related-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">
+  <img width="100" title="AnacondaでPython（データ解析の真似事）" class="urllist-image related-entries-image" alt="AnacondaでPython（データ解析の真似事）" src="https://cdn.image.st-hatena.com/image/square/7f2bcc92c609a9fa5a71d60b002c1dc919118709/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20170307%2F20170307171954.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2017/03/07" rel="nofollow">
+    <time title="2017-03-07T08:54:14Z" datetime="2017-03-07T08:54:14Z" pubdate="">
+      2017-03-07
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">AnacondaでPython（データ解析の真似事）</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">AnacondaでPython環境を作って、データ解析の真似事としてタイ…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428">
+  <img width="100" title="JavaFXで印刷" class="urllist-image related-entries-image" alt="JavaFXで印刷" src="https://cdn.image.st-hatena.com/image/square/37964c76b23d5f87140ffacba74bbee568e1d251/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20170106%2F20170106185642.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2017/01/06" rel="nofollow">
+    <time title="2017-01-06T12:14:28Z" datetime="2017-01-06T12:14:28Z" pubdate="">
+      2017-01-06
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428">JavaFXで印刷</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">年賀状印刷をMS Word+MS Excelの組み合わせでやっていたが、毎…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721">
+  <img width="100" title="JJUG CCC 2016 FALLに参加してきた #jjug_ccc" class="urllist-image related-entries-image" alt="JJUG CCC 2016 FALLに参加してきた #jjug_ccc" src="https://cdn.image.st-hatena.com/image/square/97f982d5e212944c279fe10965b17ba084f04d17/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20161205%2F20161205174624.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2016/12/05" rel="nofollow">
+    <time title="2016-12-05T08:47:21Z" datetime="2016-12-05T08:47:21Z" pubdate="">
+      2016-12-05
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721">JJUG CCC 2016 FALLに参加してきた #jjug_ccc</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">半年ごとの恒例イベントJJUG CCCの、2016年秋の会「JJUG CCC 20…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2016/09/07" rel="nofollow">
+    <time title="2016-09-07T05:19:02Z" datetime="2016-09-07T05:19:02Z" pubdate="">
+      2016-09-07
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2016/09/07/141902">Linux (CentOS 7) で GitBucket を動かす</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">開発サーバーにGitBucketを入れたので、その手順をメモする。 …</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2015/05/13/010712">
+  <img width="100" title="GitBucket 3.2 を試す" class="urllist-image related-entries-image" alt="GitBucket 3.2 を試す" src="https://cdn.image.st-hatena.com/image/square/f070e63d9e936b5cef0d3fc16e52b572c6d9b9fe/backend=imagemagick;height=100;version=1;width=100/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20150513%2F20150513010540.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2015/05/13" rel="nofollow">
+    <time title="2015-05-12T16:07:12Z" datetime="2015-05-12T16:07:12Z" pubdate="">
+      2015-05-13
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2015/05/13/010712">GitBucket 3.2 を試す</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">「Scalaで実装されたオープンソースのGitHubクローン」のGitBuc…</div>
+      </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+  </div>
+        
+
+      
+    </div>
+    
+  <div class="comment-box">
+    
+    <ul class="comment">
+      <li class="read-more-comments" style="display: none;"><a>もっと読む</a></li>
+    </ul>
+    
+      <a class="leave-comment-title js-leave-comment-title" style="display: none;">コメントを書く</a>
+    
+  </div>
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428" rel="prev">
+          <span class="pager-arrow">« </span>
+          JavaFXで印刷
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721" rel="next">
+          JJUG CCC 2016 FALLに参加してきた #jjug_…
+          <span class="pager-arrow"> »</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    プロフィール
+  </div>
+  <div class="hatena-module-body">
+    
+    <a class="profile-icon-link" href="http://nave-kazu.hatenablog.com/about">
+      <img class="profile-icon" alt="id:nave_kazu" src="https://cdn.profile-image.st-hatena.com/users/nave_kazu/profile.png">
+    </a>
+    
+
+    
+    <span class="id">
+      <a class="hatena-id-link" href="http://nave-kazu.hatenablog.com/about"><span data-user-name="nave_kazu" data-load-nickname="1">id:nave_kazu</span></a>
+      
+  
+    
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+
+    
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a class="hatena-follow-button js-hatena-follow-button unsubscribing" href="#">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-once="" data-track-name="profile-widget-subscribe-button">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">4</span>
+  </div>
+</div>
+
+    
+
+    
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://nave-kazu.hatenablog.com/search" method="get">
+  <input name="q" class="search-module-input" required="" type="text" placeholder="記事を検索" value="">
+  <input class="search-module-button" type="submit" value="検索">
+</form>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://hatenablog.com/">はてなブログ</a>
+        </li>
+      
+        <li>
+          <a href="https://hatenablog.com/guide?via=200109">ブログをはじめる</a>
+        </li>
+      
+        <li>
+          <a href="http://blog.hatenablog.com">週刊はてなブログ</a>
+        </li>
+      
+        <li>
+          <a href="https://hatenablog.com/guide/pro">はてなブログPro</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://nave-kazu.hatenablog.com/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2018/10/12/161754">Gitのコマンドを使ってみる（その1）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/10/31/145707">Djangoを使ってみる （アプリケーションへのルーティング）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/10/26/141424">Djangoを使ってみる （準備）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/05/22/101345">JJUG CCC 2017 Spring に参加してきた</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">AnacondaでPython（データ解析の真似事）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+      </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-url="http://nave-kazu.hatenablog.com/archive" data-archive-type="default">
+  <div class="hatena-module-title">
+    <a href="http://nave-kazu.hatenablog.com/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+  
+
+  
+    
+    
+      <ul class="hatena-urllist">
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2018">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2018">
+              2018 (1)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2018/10">
+                    2018 / 10 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2017">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2017">
+              2017 (6)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/10">
+                    2017 / 10 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/5">
+                    2017 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/3">
+                    2017 / 3 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/1">
+                    2017 / 1 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year" data-year="2016">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2016">
+              2016 (10)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/12">
+                    2016 / 12 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/11">
+                    2016 / 11 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/9">
+                    2016 / 9 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/7">
+                    2016 / 7 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/5">
+                    2016 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/2">
+                    2016 / 2 (2)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2015">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2015">
+              2015 (22)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/12">
+                    2015 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/11">
+                    2015 / 11 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/7">
+                    2015 / 7 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/6">
+                    2015 / 6 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/5">
+                    2015 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/4">
+                    2015 / 4 (4)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/3">
+                    2015 / 3 (4)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/2">
+                    2015 / 2 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/1">
+                    2015 / 1 (6)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      </ul>
+    
+  
+
+
+</div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+        
+
+        
+
+      </div>
+    </div>
+    
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div class="guest-footer js-guide-register test-blogs-register-guide" style="display: block !important;" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>nave_kazuさんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="http://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div class="guest-footer-btn">
+        <a href="https://hatenablog.com/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="http://nave-kazu.hatenablog.com/">
+        <img width="16" height="16" alt="なべ’s blog" src="https://cdn.blog.st-hatena.com/images/admin/blog-icon-noimage.png">
+        <span class="footer-address-name">なべ’s blog</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatenablog.com/">Hatena Blog</a>
+      |
+        <a class="report-abuse-link test-report-abuse-link" href="https://blog.hatena.ne.jp/-/abuse_report?target_url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+    
+
+    
+  <script src="https://s.hatena.ne.jp/js/HatenaStar.js?20191001"></script>
+
+
+    
+      <div class=" fb_reset" id="fb-root"><div style="top: -10000px; width: 0px; height: 0px; position: absolute;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+    
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-star" style="display: block;">
+    <i title="引用スターをつける" class="blogicon-star"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock" style="display: block;">
+    <i title="引用をストック" class="blogicon-quote"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-once="" data-track-name="quote-tweet"><i title="引用してツイートする" class="blogicon-twitter"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script id="js-requote-button-template" type="x-underscore-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    
+    <div id="hidden-subscribe-button" style="display: none;">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a class="hatena-follow-button js-hatena-follow-button unsubscribing" href="#">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-once="" data-track-name="profile-widget-subscribe-button">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">4</span>
+  </div>
+</div>
+
+    </div>
+
+    
+  <script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+<script src="https://b.st-hatena.com/js/bookmark_button.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.min.js?version=1.12.3" type="text/javascript"></script>
+<script src="https://cdn7.www.st-hatena.com/js/jquery/jquery-ui.1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.js?version=0.8.3" type="text/javascript"></script>
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.time.js?version=0.8.3" type="text/javascript"></script>
+<script id="vendor-js" src="https://cdn.blog.st-hatena.com/js/vendor.js?version=5e98d460b6e06a25ebcfb66462c0677cc6ba1e74&amp;env=production" type="text/javascript" crossorigin="anonymous" data-env="production"></script>
+
+
+
+
+
+<script src="https://cdn.blog.st-hatena.com/js/texts-ja.js?version=4f7b1504ef55977117a723913170de72dfa5d612&amp;env=production" type="text/javascript"></script>
+<script id="hatenablog-js" src="https://cdn.blog.st-hatena.com/js/hatenablog.js?version=0928ba2e102fc78c430c899c167406f7b07777c5&amp;env=production" type="text/javascript" crossorigin="anonymous" data-env="production"></script><div style="left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed;"></div>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" defer="" async=""></script>
+
+
+
+
+
+
+    
+  <script id="valve-dmp" src="https://cdn.pool.st-hatena.com/valve/dmp.js" async="" data-test-id="dmpjs" data-service="blog"></script>
+
+
+    
+
+
+
+
+
+  
+
+
+<iframe title="Twitter settings iframe" src="https://platform.twitter.com/widgets/widget_iframe.2a008290075125adde2d7b849b06a0bb.html?origin=http%3A%2F%2Fnave-kazu.hatenablog.com" frameborder="0" scrolling="no" style="display: none;" allowtransparency="true"></iframe><div id="cboxOverlay" style="display: none;"></div><div tabindex="-1" id="colorbox" role="dialog" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow" type="button"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="width: 9999px; display: none; visibility: hidden; position: absolute; max-width: none;"></div></div><div style="top: -9999px; z-index: -9999;"></div><iframe title="Twitter analytics iframe" id="rufous-sandbox" frameborder="0" scrolling="no" allowfullscreen="true" style="padding: 0px; border: medium; border-image: none; width: 0px; height: 0px; display: none; visibility: hidden; position: absolute;" allowtransparency="true"></iframe><script type="text/javascript">(function(a){var b=a.createElement("iframe"),c="https:"==a.location.protocol?"https://":"http://";b.src=c+"cf.im-apps.net/imid/beacon.html";b.style.display="none";a.body.appendChild(b)})(document);</script><iframe src="http://cf.im-apps.net/imid/beacon.html" style="display: none;"></iframe><script src="//cdn.audiencedata.net/js/v1/pageview.js?owner_id=hatena&amp;site_id=hatena" type="text/javascript"></script><script type="text/javascript">!function(c,d,b,f){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["td_send","td_send_imid"];a<e.length;a++)d[c].prototype[e[a]]=function(a){return function(){this["tmp_"+a]=this["tmp_"+a]||[];this["tmp_"+a].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(f)[0];b=b.createElement(f);b.async=!0;b.src="//cf.im-apps.net/sdk/tdim-1.1.0.min.js";a.parentNode.insertBefore(b,a)}}("TDIM",window,document,"script");
+var tdimjs=new TDIM;tdimjs.debug=!1;tdimjs.td_host="in.ybi.idcfcloud.net";tdimjs.td_api_key="312/b4f0042d7c26b4f44d2561bbb5c396349b54b10e";tdimjs.td_db="cosmi_6604";tdimjs.im_api_token="TlOjMPj_m54xiIkb8Mzm7Q";tdimjs.td_send_imid("pageviews",{custom_data:"Java,HTML,jQuery"});</script><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;dl=ss_yj_p1_rbd" style="display: none;"></iframe><iframe name="google_osd_static_frame" id="google_osd_static_frame_2394772036089" style="width: 0px; height: 0px; display: none;"></iframe><img width="1" height="1" class="bigmining_dmp_beacon" style="display: none;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" border="0"><img width="1" height="1" class="bigmining_dmp_beacon" style="display: none;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" border="0"><img width="1" height="1" class="bigmining_dmp_beacon" style="display: none;" src="https://analytics.twitter.com/i/adsct?p_id=979&amp;p_user_id=EqHFfruxL01_1589673207206" border="0"><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P5GX4M');</script><iframe id="criteo-syncframe" src='https://gum.criteo.com/syncframe?topUrl=nave-kazu.hatenablog.com#{"optout":{"value":false,"origin":0},"uid":{"origin":0},"idfs":{"origin":0},"sid":{"origin":0},"origin":"publishertag","version":89,"lwid":{"origin":0},"tld":"hatenablog.com","bundle":{"origin":0},"topUrl":"nave-kazu.hatenablog.com","cw":true}' style="display: none;"></iframe><div style="display: none; visibility: hidden;"><script type="text/javascript">!function(c,d,b,f){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["td_send","td_send_imid"];a<e.length;a++)d[c].prototype[e[a]]=function(a){return function(){this["tmp_"+a]=this["tmp_"+a]||[];this["tmp_"+a].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(f)[0];b=b.createElement(f);b.async=!0;b.src="//cf.im-apps.net/sdk/tdim-0.11.2.js";a.parentNode.insertBefore(b,a)}}("TDIM",window,document,"script");var t=new TDIM;
+t.td_api_key="312/b4f0042d7c26b4f44d2561bbb5c396349b54b10e";t.td_db="cosmi_8045";t.im_api_token="omO0CDJd98sxiIkb8Mzm7Q";t.gtm_dl="dataLayer";t.td_send_imid("pageviews");</script></div><div style="display: none; visibility: hidden;">
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid("nudt9",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","ny5vy");twq("track","PageView");</script>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1733466696949178");fbq("track","PageView");</script>
+<noscript></noscript>
+
+
+</div><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=nudt9&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" type="text/javascript"></script><script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=ny5vy&amp;events=%5B%5B%22pageview%22%2Cnull%5D%5D&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels&amp;tw_document_href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" type="text/javascript"></script></body></html>

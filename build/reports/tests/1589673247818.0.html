@@ -1,0 +1,1248 @@
+<html lang="ja" data-initial-state="{}" itemtype="http://schema.org/Article" itemscope="" data-version="ca057f7d39f4cbf0098502c82262628b" data-static-domain="https://cdn.blog.st-hatena.com" data-sentry-sample-rate="0.1" data-sentry-environment="production" data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218" data-router-type="blogs" data-pro="false" data-plus-available="" data-parts-domain="https://hatenablog-parts.com" data-page="entry" data-has-touch-view="1" data-globalheader-type="pc" data-globalheader-color="b" data-global-domain="https://hatenablog.com" data-dont-recommend-pro="false" data-device="pc" data-data-layer='{"hatenablog":{"permalink_entry":{"author_name":"nave_kazu","title":"Selenide\u3092\u8a66\u3057\u305f","hour":"17","categories":"/IT\u7cfb\t/Java","date":"2016-12-12","uri":"http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"},"brand":"hatenablog","blog":{"force_pc_view":"false","is_sleeping":"false","entry_show_footer_related_entries":"true","is_public":"true","name":"\u306a\u3079\u2019s blog","uri":"http://nave-kazu.hatenablog.com/","is_responsive_view":"false","content_seems_japanese":"true","enable_ads":"true","owner_name":"nave_kazu","disable_ads":"","lang":"ja","enable_keyword_link":"true"},"page_id":"entry","analytics":{"brand_property_id":"","separated_property_id":"UA-29716941-21","property_id":"","non_sampling_property_id":""},"admin":{},"pro":"free","router_type":"blogs"}}' data-brand="hatenablog" data-blogs-uri-base="http://nave-kazu.hatenablog.com" data-blog-uuid="8454420450073000284" data-blog-uri="http://nave-kazu.hatenablog.com/" data-blog-owner="nave_kazu" data-blog-name="なべ’s blog" data-blog-is-public="1" data-blog-host="nave-kazu.hatenablog.com" data-blog="nave-kazu.hatenablog.com" data-avail-langs="ja en" data-author="nave_kazu" data-admin-origin="https://blog.hatena.ne.jp" data-admin-domain="//blog.hatena.ne.jp"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><script src="https://static.criteo.net/js/ld/publishertag.prebid.js" type="text/javascript" async=""></script><script src="https://cdn.ampproject.org/rtv/012005012256000/amp4ads-host-v0.js"></script><script src="//in.ybi.idcfcloud.net/js/v3/event/cosmi_6604/pageviews?api_key=312%2Fb4f0042d7c26b4f44d2561bbb5c396349b54b10e&amp;data=eyJjdXN0b21fZGF0YSI6InVuZGVmaW5lZCIsImltaWQiOiJ2SkhYUXN6SVFMV0RJdW1FT1ROdTFRIiwic2VnbWVudF9laWRzIjoiIiwidGRfY2xpZW50X2lkIjoiMTRiZGMxOTYtNjZjOS00NTkyLWUzN2YtZDQwMGI5NjY5OGY3IiwidGRfY2hhcnNldCI6InV0Zi04IiwidGRfbGFuZ3VhZ2UiOiJqYS1qcCIsInRkX2NvbG9yIjoiMjQtYml0IiwidGRfc2NyZWVuIjoiMTkyMHgxMDgwIiwidGRfdGl0bGUiOiJTZWxlbmlkZeOCkuippuOBl%2BOBnyAtIOOBquOBueKAmXMgYmxvZyIsInRkX3VybCI6Imh0dHA6Ly9uYXZlLWthenUuaGF0ZW5hYmxvZy5jb20vZW50cnkvMjAxNi8xMi8xMi8xNzE0NDUiLCJ0ZF9ob3N0IjoibmF2ZS1rYXp1LmhhdGVuYWJsb2cuY29tIiwidGRfcGF0aCI6Ii9lbnRyeS8yMDE2LzEyLzEyLzE3MTQ0NSIsInRkX3JlZmVycmVyIjoiIiwidGRfaXAiOiJ0ZF9pcCIsInRkX2Jyb3dzZXIiOiJ0ZF9icm93c2VyIiwidGRfYnJvd3Nlcl92ZXJzaW9uIjoidGRfYnJvd3Nlcl92ZXJzaW9uIiwidGRfb3MiOiJ0ZF9vcyIsInRkX29zX3ZlcnNpb24iOiJ0ZF9vc192ZXJzaW9uIiwidGRfdmlld3BvcnQiOiItIn0%3D&amp;modified=1589673243564&amp;callback=TDIM.callback.tij15896732435641674.td_callback" type="text/javascript" async=""></script><script src="//sync.im-apps.net/imid/segment?token=TlOjMPj_m54xiIkb8Mzm7Q&amp;callback=TDIM.callback.tij15896732435641674.im_callback" type="text/javascript" async=""></script><script src="//sync.im-apps.net/imid/get?callback=_audiencedata_.pv&amp;need_created=True" type="text/javascript" async=""></script><script src="http://cdn.treasuredata.com/sdk/td-1.5.1.js" type="text/javascript" async=""></script><script src="//cf.im-apps.net/sdk/tdim-1.1.0.min.js" async=""></script><script src="http://www.googletagmanager.com/gtm.js?id=GTM-PWRB9N&amp;l=itm_dl1" type="text/javascript" async=""></script><script src="http://cnt.fout.jp/segapi/audience?callback=_itm_.sa_cb&amp;cvid=mHDmdffSCFxfWgmjsQ" type="text/javascript" async=""></script><script type="text/javascript">!function(){"use strict";var r=(i.prototype.isAdBlocked=function(t){var e=this;this.createPixel(i.allowedPixelUrl,function(){(e.allowedPixelLoaded=!0)===e.blockedPixelFailed&&t(!0)},function(){}),this.createPixel(i.blockedPixelUrl,function(){t(!1)},function(){(e.blockedPixelFailed=!0)===e.allowedPixelLoaded&&t(!0)})},i.prototype.createPixel=function(t,e,i){var r=document.createElement("img");r.src=t,r.height=1,r.width=1,r.style.display="none",r.onload=e,r.onerror=i},i.allowedPixelUrl="https://static.criteo.net/images/pixel.gif?ch=1",i.blockedPixelUrl="https://static.criteo.net/images/pixel.gif?ch=2",i);function i(){this.allowedPixelLoaded=!1,this.blockedPixelFailed=!1}var o=(t.prototype.checkLocalStorage=function(){if(!this.localStorage)return!1;var t=this.CHECK_STORAGE_KEY;try{return this.localStorage.setItem(t,t),this.localStorage.removeItem(t),!0}catch(t){return!1}},t.prototype.removeItem=function(t){this.localStorage.removeItem(t),this.localStorage.removeItem(t+this.EXPIRE_SUFFIX)},t.prototype.getItem=function(t,e){var i=(new Date).getTime(),r=this.localStorage.getItem(t+this.EXPIRE_SUFFIX),o=r?parseInt(r,10):-1;return-1!==o&&o<i||e&&(-1===o||e<o-i)?(this.removeItem(t),null):this.localStorage.getItem(t)},t.prototype.setItem=function(t,e,i){if(this.localStorage.setItem(t,e),i){var r=(new Date).getTime()+i;this.localStorage.setItem(t+this.EXPIRE_SUFFIX,r.toString())}},t.prototype.getAllItemsByPrefix=function(t){var e=[];for(var i in localStorage)0===i.indexOf(t)&&e.push(i);return e},t);function t(t){this.EXPIRE_SUFFIX="_expires",this.CHECK_STORAGE_KEY="criteo_localstorage_check",this.localStorage=function(t){try{return t.localStorage}catch(t){return}}(t||window)}var y=(e.create=function(){return new e},e.prototype.adBlockFlagEnabled=function(){if(!this.localStorageEnabled)return!1;var t=e.ADBLOCK_FLAG_KEY;return null!==this.localStorageHelper.getItem(t)},e.prototype.enableAdBlockFlag=function(){if(this.localStorageEnabled){var t=e.ADBLOCK_FLAG_KEY;this.localStorageHelper.setItem(t,"1",e.ADBLOCK_FLAG_LIFETIME)}},e.prototype.disableAdBlockFlag=function(){if(this.localStorageEnabled){var t=e.ADBLOCK_FLAG_KEY;this.localStorageHelper.removeItem(t)}},e.prototype.setAdBlockFlagTimer=function(t){var e=this;if(!this.adBlockFlagEnabled()&&this.timerEnabled&&!this.timerStarted){var i=new r;this.timerStarted=!0,setTimeout(function(){e.timerEnabled&&i.isAdBlocked(function(t){t?e.enableAdBlockFlag():e.disableAdBlockFlag()}),e.disableAdBlockFlagTimer()},t)}},e.prototype.disableAdBlockFlagTimer=function(){this.timerEnabled=!1},e.ADBLOCK_FLAG_KEY="criteo_adblock_flag",e.ADBLOCK_FLAG_LIFETIME=864e5,e);function e(){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.timerEnabled=!0,this.timerStarted=!1}var n,a,d,s,M=((n=function(t,e){return(n=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}n(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(c,a=function(){}),c.prototype.ResizeFrame=function(t,e){if(this.document.defaultView&&this.document.defaultView.frameElement){var i=this.document.defaultView.frameElement;i.width=t.toString(),i.height=e.toString()}},c.prototype.Write=function(t){this.document.open(),this.document.write(t),this.document.close()},c.prototype.LoadScript=function(t){this.Write("<script type='text/javascript' src='"+t+"'><\/script>")},c);function c(t){var e=a.call(this)||this;return e.document=t,e}(s=d=d||{})[s.Error=0]="Error",s[s.Warning=1]="Warning",s[s.Debug=2]="Debug";var l=["color: #fff;","background: #ff8f1c;","display: inline-block;","padding: 1px 4px;","border-radius: 3px;"].join(" "),P=(u.Log=function(t,e){if(!(u.LOGLEVEL<t)){var i=d[t].toUpperCase(),r=window.navigator.userAgent,o=0<r.indexOf("MSIE ")||0<r.indexOf("Trident/");window.console&&(o?console.log("[PubTag] "+i+": "+e):console.log("%cPubTag",l,i+": "+e))}},u.Debug=function(t){u.Log(d.Debug,t)},u.Warning=function(t){u.Log(d.Warning,t)},u.Error=function(t){u.Log(d.Error,t)},u.LOGLEVEL=d.Error,u);function u(){}var p=(h.prototype.silentModeEnabled=function(){var t=h.SILENT_MODE_KEY;return this.localStorageEnabled&&null!==this.localStorageHelper.getItem(t)},h.prototype.enableSilentMode=function(t){if(this.localStorageEnabled){var e=h.SILENT_MODE_KEY;this.localStorageHelper.setItem(e,"1",t)}},h.SILENT_MODE_KEY="criteo_silent_mode",h);function h(){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage()}function f(t){try{return JSON.parse(t)}catch(t){return}}function v(){return(new Date).getTime()}var g=(m.prototype.get=function(t){var e=localStorage.getItem(t);if(e){var i=e.split("|");if(!(i.length<2||parseInt(i[1],10)<v()))return i[0]}},m.prototype.set=function(t,e){var i=v()+e;localStorage.setItem(t,this.id+"|"+i)},m.prototype.acquire=function(t,e,i){var r=this;void 0===i&&(i=100),i<=0||this.tryAcquire(e)?(t(),this.release()):setTimeout(function(){r.acquire(t,e,i-10)},10)},m.prototype.tryAcquire=function(t){localStorage.setItem(this.x,this.id);var e=this.get(this.y);return!(e&&e!==this.id||(this.set(this.y,t),localStorage.getItem(this.x)!==this.id||this.get(this.y)!==this.id))},m.prototype.release=function(){localStorage.removeItem(this.x),localStorage.removeItem(this.y)},m);function m(t){this.x=t+"_lock_A",this.y=t+"_lock_B",this.id=Math.floor(1e9*Math.random()).toString()}var C=(I.prototype.toString=function(){return this.width+"x"+this.height},I);function I(t,e){this.width=t,this.height=e}var b=(_.prototype.toString=function(){return"ImpId"+this.impressionId},_);function _(t){this.impressionId=t}var E,w,S=((E=function(t,e){return(E=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}E(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(T,w=b),T.prototype.toString=function(){return w.prototype.toString.call(this)+"_Size"+this.size+"_NetworkId"+this.networkId},T);function T(t,e,i){var r=w.call(this,t)||this;return r.size=e,r.networkId=i,r}var R,A,O=((R=function(t,e){return(R=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}R(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(D,A=b),D.prototype.toString=function(){return A.prototype.toString.call(this)+"_ZoneId"+this.zoneId},D);function D(t,e){var i=A.call(this,t)||this;return i.zoneId=e,i}var B=(k.prototype.createKeysFromSlotRequest=function(t){if(this.useZoneIdIntegration)return[new O(t.impId,t.zoneId)];for(var e=[],i=0,r=t.sizes;i<r.length;i++){var o=r[i];e.push(new S(t.impId,o,this.networkId))}return e},k.prototype.createKeyFromSlotResponse=function(t){return this.useZoneIdIntegration?new O(t.impid,t.zoneid):new S(t.impid,new C(t.width,t.height),this.networkId)},k.prototype.createKeyFromBid=function(t){return this.useZoneIdIntegration?new O(t.impressionId,t.zoneId):new S(t.impressionId,new C(t.width,t.height),this.networkId)},k);function k(t,e){this.useZoneIdIntegration=t,this.networkId=e}var x=(F.useZoneIdIntegration=function(t,e){return void 0===e||0===t.filter(function(t){return void 0!==t.sizes&&0<t.sizes.length}).length},F.prototype.get=function(t){var e=this.localStorageHelper.getItem(t),i=e&&f(e);return i&&"object"==typeof i&&"bids"in i?(i.bids=i.bids.filter(function(t){return t.expiration>v()}),i):{bids:[]}},F.prototype.getBySlotKey=function(t){return this.get(F.BID_KEY_PREFIX+t.toString())},F.prototype.set=function(t,e){0<e.bids.length||e.no_bid&&e.no_bid>v()?this.localStorageHelper.setItem(t,JSON.stringify(e)):this.localStorageHelper.removeItem(t)},F.prototype.setBySlotKey=function(t,e){this.set(F.BID_KEY_PREFIX+t.toString(),e)},F.prototype.filterNoBidSlots=function(t){for(var e=[],i=0,r=t;i<r.length;i++){for(var o=r[i],n=[],a=0,s=this.slotKeyFactory.createKeysFromSlotRequest(o);a<s.length;a++){var c=s[a];this.getBid(c,0)!==F.NO_BID&&(c instanceof S?n.push(c.size):e.push(o))}0<n.length&&(o.sizes=n,e.push(o))}return e},F.prototype.getRequestCachedBids=function(t,e){void 0===e&&(e=5e3);for(var i=[],r=0,o=t;r<o.length;r++)for(var n=o[r],a=0,s=this.slotKeyFactory.createKeysFromSlotRequest(n);a<s.length;a++){var c=s[a],d=this.getBid(c,e);void 0!==d&&d!==F.NO_BID&&i.push(d)}return i},F.prototype.getBid=function(t,e){if(void 0===e&&(e=5e3),this.localStorageEnabled){var i=this.getBySlotKey(t);if(i.no_bid&&i.no_bid>v())return F.NO_BID;if(0<e)for(var r=0,o=i.bids;r<o.length;r++){var n=o[r];if(new g(F.BID_KEY_PREFIX+n.bid.slotid).tryAcquire(e))return n.bid}}},F.prototype.storeRequestNoBid=function(t,e){for(var i=0,r=this.slotKeyFactory.createKeysFromSlotRequest(t);i<r.length;i++){var o=r[i];this.storeNoBid(o,e)}},F.prototype.storeResponseBid=function(e,i){var t=this.slotKeyFactory.createKeyFromSlotResponse(e);this.modifyCache(t,function(t){t.bids.push({bid:e,expiration:v()+1e3*i})})},F.prototype.storeNoBid=function(t,e){this.modifyCache(t,function(t){t.no_bid=Math.max(t.no_bid||0,v()+1e3*e)})},F.prototype.removeBid=function(i){var t=this.slotKeyFactory.createKeyFromBid(i);this.modifyCache(t,function(t){for(var e=0;e<t.bids.length;e++)if(t.bids[e].bid.slotid===i.slotId)return void t.bids.splice(e,1)}),new g(t.toString()).release()},F.prototype.modifyCache=function(e,i){var r=this;if(this.localStorageEnabled){var o=new g(e.toString());o.acquire(function(){var t=r.getBySlotKey(e);i(t),r.setBySlotKey(e,t),o.release()},1e3)}},F.prototype.clearExpiredItems=function(){for(var t=0,e=this.localStorageHelper.getAllItemsByPrefix(F.BID_KEY_PREFIX);t<e.length;t++){var i=e[t],r=this.get(i);r&&this.set(i,r)}},F.NO_BID="nobid",F.BID_KEY_PREFIX="criteo_pt_cdb_bidcache_",F);function F(t,e){this.localStorageHelper=new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.slotKeyFactory=new B(t,e)}var L=(N.prototype.filterNoBidSlots=function(t){var e=this.bidManager.filterNoBidSlots(t);return this.context.shouldIgnoreSilentMode?(e.length!==t.length&&this.context.setSilentModeIgnored&&this.context.setSilentModeIgnored(),t):e},N.prototype.silentModeEnabled=function(){var t=!1;return this.silentModeManager.silentModeEnabled()&&(this.context.shouldIgnoreSilentMode&&this.context.setSilentModeIgnored?this.context.setSilentModeIgnored():t=!0),t},N.prototype.getCachedBids=function(t){return this.bidManager.getRequestCachedBids(t)},N.prototype.removeBid=function(t){this.bidManager.removeBid(t)},N.prototype.handleResponse=function(t,e,i,r){var o=i.time_to_next_call;0<o&&(P.Debug("Global silent mode enabled for "+o+" seconds"),this.silentModeManager.enableSilentMode(1e3*o));var n={};if(i.slots)for(var a=0,s=i.slots;a<s.length;a++)(f=s[a]).ttl&&(n[f.imp_id]=f.ttl);if(e.slots)for(var c=0,d=e.slots;c<d.length;c++){var l=0;(f=d[c]).slotid in n&&(l=n[f.slotid],delete n[f.slotid]),r&&0<l&&(P.Debug("Post-timeout bid for slot '"+f.impid+"' cached for "+l+" seconds"),this.bidManager.storeResponseBid(f,l))}for(var u in n)if(n.hasOwnProperty(u))for(var p=0,h=t;p<h.length;p++){var f;(f=h[p]).slotId===u&&(l=n[u],P.Debug("Silent mode for slot '"+f.impId+"' enabled for "+l+" seconds"),this.bidManager.storeRequestNoBid(f,l))}},N.prototype.clearExpiredItems=function(){var t=this;setTimeout(function(){t.bidManager.clearExpiredItems()},3e3)},N);function N(t,e,i){var r=x.useZoneIdIntegration(e,i);this.bidManager=new x(r,i),this.silentModeManager=new p,this.context=t}var U=(W.prototype.eval=function(t){},W);function W(t){this.name=t}var q,G,K=((q=function(t,e){return(q=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}q(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(H,G=U),H.prototype.eval=function(t){this.callback&&this.callback.apply(this)},H.NAME="genericEvent",H);function H(t){var e=G.call(this,H.NAME)||this;return e.callback=t,e}var V=(z.prototype.generateRandomId=function(){return Math.random().toString(36).replace(/[^a-z]+/g,"").substr(0,6)},z);function z(t,e,i,r,o,n,a){this.id=this.generateRandomId(),this.slotId=t,this.impressionId=e,this.cpm=i,this.width=r,this.height=o,this.zoneId=n,this.dealCode=a}var j,Y,X=((j=function(t,e){return(j=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}j(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(J,Y=V),J.prototype.GenerateEvent=function(t){var e=this;return t.ResizeFrame(this.width,this.height),new K(function(){return t.LoadScript(e.displayUrl)})},J.prototype.GenerateMessage=function(){return{displayUrl:this.displayUrl}},J);function J(t,e,i,r,o,n,a,s){var c=Y.call(this,t,e,i,r,o,n,s)||this;return c.displayUrl=a,c}var Z,Q,$=((Z=function(t,e){return(Z=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}Z(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(tt,Q=V),tt.prototype.GenerateEvent=function(t){var e=this;return t.ResizeFrame(this.width,this.height),new K(function(){return t.Write(e.creative)})},tt.prototype.GenerateMessage=function(){return{creative:this.creative}},tt);function tt(t,e,i,r,o,n,a,s){var c=Q.call(this,t,e,i,r,o,n,s)||this;return c.creative=a,c}var et,it,rt=((et=function(t,e){return(et=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}et(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(ot,it=V),ot.prototype.GenerateEvent=function(t){var e=this;return"function"!=typeof this.nativeCallback?(P.Error("'nativeCallback' parameter is not a function in placements object"),new K(void 0)):"object"!=typeof this.nativePayload?(P.Error("'nativePayload' parameter is not an object in placements object"),new K(void 0)):new K(function(){return e.nativeCallback(e.nativePayload)})},ot.prototype.GenerateMessage=function(){return{nativePayload:this.nativePayload}},ot);function ot(t,e,i,r,o,n,a,s,c){var d=it.call(this,t,e,i,r,o,n,c)||this;return d.nativeCallback=a,d.nativePayload=s,d}var nt=function(t,e,i,r,o,n,a,s,c,d,l,u,p,h,f,v,g,m,y,C){this.publisherTagVersion=t,this.slots=e,this.elapsed=i,this.isTimeout=r,this.pageLoadElapsed=o,this.adapterStartElapsed=n,this.cdbCallStartElapsed=a,this.cdbCallEndElapsed=s,this.adapterEndElapsed=c,this.setTargetingElapsed=d,this.adapterTimeout=l,this.adapterIsTimeout=u,this.timeToFirstByte=p,this.requestGroupId=h,this.sid=f,this.previousBuildRequestTimestamp=v,this.silentModeRequestCount=g,this.localStorageKeyCount=m,this.connectionEstablishmentTime=y,this.domainLookupTime=C},at=function(t,e,i,r,o){this.impressionId=t,this.zoneId=e,this.adUnitId=i,this.cachedBidUsed=r,this.isDsc=o},st=(ct.prototype.withElapsed=function(t){return this.elapsed=Math.round(t),this},ct.prototype.withIsTimeout=function(t){return this.isTimeout=t,this},ct.prototype.withPageLoadElapsed=function(t){return this.pageLoadElapsed=Math.round(t),this},ct.prototype.withAdapterStartElapsed=function(t){return this.adapterStartElapsed=Math.round(t),this},ct.prototype.withCdbCallStartElapsed=function(t){return this.cdbCallStartElapsed=Math.round(t),this},ct.prototype.withCdbCallEndElapsed=function(t){return this.cdbCallEndElapsed=Math.round(t),this},ct.prototype.withSetTargetingElapsed=function(t){return this.setTargetingElapsed=Math.round(t),this},ct.prototype.withAdapterEndElapsed=function(t){return this.adapterEndElapsed=Math.round(t),this},ct.prototype.withAdapterTimeout=function(t){return this.adapterTimeout=t&&Math.round(t),this},ct.prototype.withCachedBidsReturned=function(t){return this.cachedBidsReturned=t,this},ct.prototype.withTimeToFirstByte=function(t){return this.timeToFirstByte=t&&Math.round(t),this},ct.prototype.withConnectionEstablishmentTime=function(t){return this.connectionEstablishmentTime=t&&Math.round(t),this},ct.prototype.withDomainLookupTime=function(t){return this.domainLookupTime=t&&Math.round(t),this},ct.prototype.withRequestGroupId=function(t){return this.requestGroupId=t,this},ct.prototype.withSid=function(t){return this.sid=t,this},ct.prototype.addSlot=function(t,e,i,r){var o=0<this.cachedBidsReturned.filter(function(t){return t.impid===i&&t.zoneid===e}).length;return this.slots.push(new at(t,e,i,o,r)),this},ct.prototype.build=function(){var t;return void 0!==this.adapterTimeout&&(t=this.adapterEndElapsed>this.adapterTimeout),new nt(89,this.slots,this.elapsed,this.isTimeout,this.pageLoadElapsed,this.adapterStartElapsed,this.cdbCallStartElapsed,this.cdbCallEndElapsed,this.adapterEndElapsed,this.setTargetingElapsed,this.adapterTimeout,t,this.timeToFirstByte,this.requestGroupId,this.sid,this.metricsManager.getPreviousBuildRequestTimestamp(),this.metricsManager.getSilentModeRequestCount(!0),this.metricsManager.getLocalStorageKeyCount(),this.connectionEstablishmentTime,this.domainLookupTime)},ct);function ct(t){this.elapsed=0,this.isTimeout=!1,this.pageLoadElapsed=0,this.adapterStartElapsed=0,this.cdbCallStartElapsed=0,this.cdbCallEndElapsed=0,this.adapterEndElapsed=0,this.cachedBidsReturned=[],this.slots=[],this.metricsManager=t}var dt=(lt.prototype.getRequest=function(){return{feedbacks:this.feedbacks}},lt.prototype.getUrl=function(){return this.urlBuilder.buildCsmUrl(this.profileId,this.adapterVersion,this.wrapperVersion)},lt);function lt(t,e,i,r,o){this.urlBuilder=t,this.profileId=e,this.adapterVersion=r,this.wrapperVersion=o,this.feedbacks=i}var ut,pt,ht=(ft.generateCacheBuster=function(){return Math.floor(99999999999*Math.random())},ft);function ft(){}function vt(t){switch(t.toLowerCase()){case"amp":return ut.AMP;default:return ut.Unspecified}}(pt=ut=ut||{})[pt.Unspecified=0]="Unspecified",pt[pt.AMP=1]="AMP";var gt=(mt.prototype.buildUrl=function(t,e,i,r,o){void 0===i&&(i=ut.Unspecified);var n=mt.CRITEO_BIDDER_URL+this.getHandlerPath();return n+="?ptv=89",!0===e.isAdBlocked&&(n+="&abp=1"),n=this.appendCommonParameters(n,t,r,o),n+=e.ctoIdOnPublisherDomain?"&idcpy="+e.ctoIdOnPublisherDomain:"",n+=e.idfs?"&idfs="+e.idfs:"",n+=e.secureId?"&sid="+e.secureId:"",n+=e.isOptOut?"&optout=1":"",n+=e.bundle?"&bundle="+e.bundle:"",i!==ut.Unspecified&&(n+="&im="+i),n+=e.silentModeIgnored?"&smi=1":"",n+="&cb="+String(ht.generateCacheBuster()),n+=e.getContextFlags()},mt.prototype.buildCsmUrl=function(t,e,i){var r=mt.CRITEO_BIDDER_URL+mt.CRITEO_CSM_HANDLER;return r+="?ptv=89",this.appendCommonParameters(r,t,e,i)},mt.prototype.appendCommonParameters=function(t,e,i,r){return t+="&profileId="+String(e),void 0!==i&&(t+="&av="+String(i)),void 0!==r&&(t+="&wv="+encodeURIComponent(r)),t},mt.prototype.getHandlerPath=function(){return this.auditMode?mt.CRITEO_BIDDER_AUDIT_HANDLER:mt.CRITEO_BIDDER_HANDLER},mt.CRITEO_BIDDER_URL="https://bidder.criteo.com/",mt.CRITEO_BIDDER_HANDLER="cdb",mt.CRITEO_CSM_HANDLER="csm",mt.CRITEO_BIDDER_AUDIT_HANDLER="prebid/audit",mt);function mt(t){void 0===t&&(t=!1),this.auditMode=t}var yt=(Ct.prototype.getMetrics=function(t){if(this.localStorageEnabled){var e=Ct.TIMING_METRICS_STORAGE_KEY,i=this.localStorageHelper.getItem(e),r=i?f(i):[];return t&&this.localStorageHelper.removeItem(e),r}return[]},Ct.prototype.setMetrics=function(t){if(this.localStorageEnabled){var e=Ct.TIMING_METRICS_STORAGE_KEY;this.localStorageHelper.setItem(e,JSON.stringify(t),36e5)}},Ct.prototype.storeMetric=function(t){var e=this;if(this.localStorageEnabled){var i=this.getMetrics(!1);i.push(t),this.setMetrics(i);var r=(t&&t.adapterTimeout||2e3)+1e3;setTimeout(function(){e.sendMetrics()},r)}},Ct.prototype.getManagerMetrics=function(){var t=this.localStorageHelper.getItem(Ct.MANAGER_METRICS_STORAGE_KEY);if(null==t)return{};var e=f(t);return void 0===e?{}:e},Ct.prototype.setManagerMetrics=function(t){this.localStorageHelper.setItem(Ct.MANAGER_METRICS_STORAGE_KEY,JSON.stringify(t))},Ct.prototype.getPreviousBuildRequestTimestamp=function(){var t=this.getManagerMetrics().previousBuildRequestTimestamp;return isNaN(t)?void 0:t},Ct.prototype.resetPreviousBuildRequestTimestamp=function(){var t=this.getManagerMetrics();t.previousBuildRequestTimestamp=(new Date).getTime().toString(),this.setManagerMetrics(t)},Ct.prototype.getSilentModeRequestCount=function(t){void 0===t&&(t=!1);var e=this.getManagerMetrics().silentModeRequestCount;return t&&this.resetSilentModeRequestCount(),isNaN(e)?0:e},Ct.prototype.incSilentModeRequestCount=function(){var t=this.getManagerMetrics();t.silentModeRequestCount=isNaN(t.silentModeRequestCount)?1:t.silentModeRequestCount+1,this.setManagerMetrics(t)},Ct.prototype.resetSilentModeRequestCount=function(){var t=this.getManagerMetrics();t.silentModeRequestCount=0,this.setManagerMetrics(t)},Ct.prototype.getLocalStorageKeyCount=function(){return this.localStorageHelper.getAllItemsByPrefix("criteo_").length+this.localStorageHelper.getAllItemsByPrefix("cto_").length},Ct.prototype.sendMetrics=function(){var t=this.getMetrics(!0);if(!(t.length<=0)){this.resetPreviousBuildRequestTimestamp();var e=new dt(new gt,this.profileId,t,this.adapterVersion,this.wrapperVersion),i=e.getUrl(),r=JSON.stringify(e.getRequest());navigator.sendBeacon&&navigator.sendBeacon(i,r)}},Ct.TIMING_METRICS_STORAGE_KEY="criteo_pt_cdb_metrics",Ct.MANAGER_METRICS_STORAGE_KEY="criteo_pt_cdb_mngr_metrics",Ct);function Ct(t,e,i,r){this.profileId=t,this.adapterVersion=e,this.wrapperVersion=i,this.localStorageHelper=r||new o,this.localStorageEnabled=this.localStorageHelper.checkLocalStorage()}var It=(bt.clearState=function(){this.cloneByImpressionId={}},bt.tryInsertPlaceholder=function(t){var e=document.getElementById(t);if(null===e)return!1;if(e.appendChild(this.createPlaceholder()),this.isVisible(e))return!0;this.removePlaceholder(t);var i=e.parentElement;if(null===i)return!1;var r=this.createClone(e);return i.insertBefore(r,e),r.appendChild(this.createPlaceholder()),this.isVisible(r)?(this.cloneByImpressionId[t]=r,!0):(i.removeChild(r),!1)},bt.isVisible=function(t){return 0!==t.offsetWidth&&0!==t.offsetHeight&&0!==t.getClientRects().length},bt.createClone=function(t){var e=t.cloneNode(!1);return e.id=this.generateRandomId(),e.className="",e},bt.generateRandomId=function(){for(var t="1234567890abcdefghijklmnopqrstuvwxyz",e="",i=0;i<20;i++){var r=Math.floor(Math.random()*t.length);e+=t.charAt(r)}return e},bt.createPlaceholder=function(){var t=document.createElement("div");return t.style.width="1px",t.style.height="1px",t.style.display="block",t.className=bt.PLACEHOLDER_NAME,t},bt.removePlaceholder=function(t){var e=this.cloneByImpressionId[t];if(void 0===e){var i=document.getElementById(t);if(null!==i)for(var r=0,o=i.getElementsByClassName(bt.PLACEHOLDER_NAME);r<o.length;r++){var n=o[r];null!==n.parentNode&&n.parentNode.removeChild(n)}}else null!==e.parentNode&&e.parentNode.removeChild(e)},bt.insertAdIFrame=function(t){var e,i=this.cloneByImpressionId[t];if(void 0!==i)e=i;else{var r=document.getElementById(t);if(null===r)return null;e=r}for(var o=0,n=e.getElementsByClassName(bt.PLACEHOLDER_NAME);o<n.length;o++){for(var a=n[o],s=0,c=a.childNodes;s<c.length;s++){var d=c[s];null!==d.parentNode&&d.parentNode.removeChild(d)}var l=this.createAdIFrame();return a.appendChild(l),a.style.width="",a.style.height="",a.style.display="",l}return null},bt.createAdIFrame=function(){var t=document.createElement("iframe");return t.scrolling="no",t.marginWidth="0",t.marginHeight="0",t.frameBorder="0",t.style.border="0",t.style.verticalAlign="bottom",t},bt.removePlaceholders=function(t,e){void 0===e&&(e=[]);for(var i=0,r=t;i<r.length;i++){var o=r[i].impId;-1===e.indexOf(o)&&bt.removePlaceholder(o)}},bt.tryInsertPlaceholders=function(t){for(var e=[],i=0,r=t;i<r.length;i++){var o=r[i],n=o.impId;bt.tryInsertPlaceholder(n)&&e.push(o)}return e},bt.PLACEHOLDER_NAME="criteo_placeholder",bt.cloneByImpressionId={},bt);function bt(){}var _t=(Et.prototype.isValid=function(){return 0<this.slots.length},Et.prototype.getRequest=function(){for(var t=[],e=0,i=this.slots;e<i.length;e++){var r=i[e],o={slotid:r.slotId,impid:r.impId};if(void 0!==r.zoneId&&(o.zoneid=r.zoneId),void 0!==r.nativeCallback&&(o.native=!0),void 0!==r.transactionId&&(o.transactionid=r.transactionId),void 0!==r.publisherSubId&&(o.publishersubid=r.publisherSubId),void 0!==r.sizes){for(var n=[],a=0,s=r.sizes;a<s.length;a++){var c=s[a];n.push(c.width+"x"+c.height)}o.sizes=n}if(void 0!==r.video){var d={playersizes:this.parsePlayerSizes(r.video.playersize),mimes:r.video.mimes,protocols:r.video.protocols,maxduration:r.video.maxduration,api:r.video.api,skip:r.video.skip,placement:r.video.placement,playbackmethod:r.video.playbackmethod,minduration:r.video.minduration,startdelay:r.video.startdelay};o.video=d}if(void 0!==this.viewportComputer){var l=this.viewportComputer.getSlotPosition(r);void 0!==l&&(o.position={top:l.top,left:l.left})}void 0!==r.ext&&(o.ext=r.ext),t.push(o)}var u={ceh:this.context.ceh,uspOptout:this.context.ccpaOptout,ext:this.context.userExt},p={publisher:{url:this.context.highestAccessibleUrl,ext:this.context.publisherExt},slots:t,user:u};void 0!==this.networkId&&(p.publisher.networkid=this.networkId);var h=this.metricsManager.getMetrics(!0);if(h.length&&(p.previousBidFeedback=h),this.privacyWrapper&&(this.privacyWrapper.gdprConsent&&(p.gdprConsent=this.privacyWrapper.gdprConsent),this.privacyWrapper.ccpaIabConsent&&(u.uspIab=this.privacyWrapper.ccpaIabConsent.uspString)),void 0!==this.viewportComputer){var f=this.viewportComputer.getViewport();p.viewport={width:f.width,height:f.height,scrollTop:f.scrollTop,scrollLeft:f.scrollLeft}}return p},Et.parsePlayerSize=function(t){return t[0]+"x"+t[1]},Et.prototype.parsePlayerSizes=function(t){return Array.isArray(t[0])?t.map(function(t){return Et.parsePlayerSize(t)}):[Et.parsePlayerSize(t)]},Et.prototype.getUrl=function(){return this.urlBuilder.buildUrl(this.profileId,this.context,this.integrationMode,this.adapterVersion,this.wrapperVersion)},Et);function Et(t,e,i,r,o,n,a,s,c,d,l){this.slots=t,this.context=e,this.metricsManager=i,this.urlBuilder=r,this.profileId=o,this.integrationMode=n||ut.Unspecified,this.networkId=a,this.adapterVersion=s,this.privacyWrapper=c,this.wrapperVersion=d,this.viewportComputer=l}function wt(t){var e={slots:void 0,time_to_next_call:0};return void 0!==t.exd&&(void 0!==t.exd.time_to_next_call&&(e.time_to_next_call=t.exd.time_to_next_call),e.slots=t.exd.slots,delete t.exd),e}function St(){var i=(new Date).getTime();return"undefined"!=typeof performance&&"function"==typeof performance.now&&(i+=performance.now()),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(t){var e=(i+16*Math.random())%16|0;return i=Math.floor(i/16),("x"===t?e:3&e|8).toString(16)})}var Tt=function(t,e,i,r,o,n,a,s,c){this.slotId=St().replace(/-/g,""),this.impId=t,this.zoneId=e,this.nativeCallback=i,this.transactionId=r,this.sizes=o,this.publisherSubId=n,this.mediaTypes=a,this.video=s,this.ext=c},Mt=function(t,e,i,r,o,n,a,s,c,d){this.playersize=t,this.mimes=e,this.protocols=i,this.maxduration=r,this.api=o,this.skip=n,this.placement=a,this.playbackmethod=s,this.minduration=c,this.startdelay=d},Pt=(Rt.CreateRunning=function(){var t=new Rt;return t.start(),t},Rt.CreateWithStartTime=function(t){var e=new Rt(!1);return e.startTime=t,e},Rt.TimeSincePageLoad=function(){if(window.performance){if(window.performance.now)return window.performance.now();if(window.performance.timing&&window.performance.timing.navigationStart)return(new Date).getTime()-performance.timing.navigationStart}return 0},Rt.prototype.start=function(){this.startTime=this.now()},Rt.prototype.elapsed=function(){return this.now()-this.startTime},Rt);function Rt(t){void 0===t&&(t=!0),t&&window.performance&&window.performance.now?this.now=window.performance.now.bind(window.performance):Date.now?this.now=Date.now:this.now=function(){return(new Date).getTime()}}var At=(Ot.prototype.sendRequest=function(t){this.url=t,this.sendTime=Pt.CreateRunning(),this.builder.withCdbCallStartElapsed(this.timer.elapsed())},Ot.prototype.requestReceived=function(t){void 0===t&&(t=!1),this.builder.withElapsed(function(t){if(window.performance&&window.performance.getEntries)for(var e=window.performance.getEntries(),i=e.length-1;0<=i;--i){var r=e[i];if(r.name===t&&r.duration)return Math.round(r.duration)}}(this.url)||this.sendTime.elapsed()),this.builder.withCdbCallEndElapsed(this.timer.elapsed()),this.builder.withIsTimeout(t)},Ot.prototype.setTargeting=function(){this.hasSetTargetingBeenCalled||(this.builder.withSetTargetingElapsed(this.timer.elapsed()),this.hasSetTargetingBeenCalled=!0)},Ot.prototype.finish=function(t,e){if(this.builder.withAdapterEndElapsed(this.timer.elapsed()),this.builder.withSid(t),this.builder.withRequestGroupId(St()),e&&0!==e.length)for(var i=0,r=e;i<r.length;i++){var o=r[i];this.builder.addSlot(o.imp_id,o.zone_id,o.ad_unit_id,o.is_dsc)}else this.builder.addSlot("");var n=Ot.getLastCdbTiming();return void 0!==n&&(this.builder.withTimeToFirstByte(Ot.computeTimeToFirstByte(n)),this.builder.withConnectionEstablishmentTime(Ot.computeConnectionEstablishmentTime(n)),this.builder.withDomainLookupTime(Ot.computeDomainLookupTime(n))),this.build()},Ot.getLastCdbTiming=function(){if(void 0!==window.performance&&void 0!==window.performance.getEntriesByType&&"function"==typeof window.performance.getEntriesByType){var t=window.performance.getEntriesByType("resource");if(void 0!==t){var e=t.filter(function(t){return 0<=t.name.indexOf("cdb")});return void 0!==e&&0<e.length?e[e.length-1]:void 0}}},Ot.computeTimeToFirstByte=function(t){var e=t.responseStart,i=t.requestStart;if(void 0!==e&&void 0!==i)return e-i},Ot.computeConnectionEstablishmentTime=function(t){var e=t.connectEnd-t.connectStart;return isNaN(e)?void 0:e},Ot.computeDomainLookupTime=function(t){var e=t.domainLookupEnd-t.domainLookupStart;return isNaN(e)?void 0:e},Ot.prototype.build=function(){return this.builder.build()},Ot);function Ot(t,e,i){this.hasSetTargetingBeenCalled=!1,this.builder=t,this.timer=void 0!==e?Pt.CreateWithStartTime(e):Pt.CreateRunning();var r=this.timer.elapsed();this.builder.withAdapterStartElapsed(r),this.builder.withPageLoadElapsed(Pt.TimeSincePageLoad()-r),void 0!==i&&this.builder.withAdapterTimeout(i)}function Dt(t){var e="number"==typeof window.PREBID_TIMEOUT?window.PREBID_TIMEOUT:void 0;return t&&e?Math.min(t,e):t||e||void 0}var Bt=function(t,e){this.top=t,this.left=e},kt=function(t,e,i,r){this.width=t,this.height=e,this.scrollTop=i,this.scrollLeft=r},xt=(Ft.getHighestAccessibleWindow=function(t){var e=t,i=!1;try{for(;e.parent.document!==e.document;){if(!e.parent.document){i=!0;break}e=e.parent}}catch(t){i=!0}return{topFrame:e,err:i}},Ft.getHighestAccessibleUrl=function(t){var e=t.topFrame;if(!t.err)return e.location.href;try{var i=e.top.location.href;if(i)return i}catch(t){}try{var r=e.location.ancestorOrigins;if(r)return r[r.length-1]}catch(t){}return e.document.referrer},Ft.inIframe=function(){try{return window.self!==window.top}catch(t){return!0}},Ft);function Ft(){}var Lt=(Nt.prototype.getViewport=function(){var t=xt.getHighestAccessibleWindow(window).topFrame,e=t.document,i=t.innerWidth||e.documentElement.clientWidth,r=t.innerHeight||e.documentElement.clientHeight,o=e.documentElement.scrollTop||e.body&&e.body.scrollTop||0,n=e.documentElement.scrollLeft||e.body&&e.body.scrollLeft||0;return new kt(i,r,o,n)},Nt.prototype.getSlotPosition=function(t){var e=t.impId,i=document.getElementById(e);if(null!==i){var r=i.getBoundingClientRect();return new Bt(r.top,r.left)}},Nt);function Nt(){}var Ut,Wt,qt=function(){return(qt=Object.assign||function(t){for(var e,i=1,r=arguments.length;i<r;i++)for(var o in e=arguments[i])Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t}).apply(this,arguments)};(Wt=Ut=Ut||{}).Native="native",Wt.Banner="banner",Wt.Video="video";var Gt=(Kt.prototype.hasValidNativeParams=function(t){return!(t.nativeParams&&(t.nativeParams.image&&!0!==t.nativeParams.image.sendId||t.nativeParams.icon&&!0!==t.nativeParams.icon.sendId||t.nativeParams.clickUrl&&!0!==t.nativeParams.clickUrl.sendId||t.nativeParams.displayUrl&&!0!==t.nativeParams.displayUrl.sendId||t.nativeParams.privacyLink&&!0!==t.nativeParams.privacyLink.sendId||t.nativeParams.privacyIcon&&!0!==t.nativeParams.privacyIcon.sendId))},Kt.prototype.setEnableSendAllBids=function(t){this.enableSendAllBids=t},Kt.prototype.buildCdbUrl=function(){return this.url},Kt.prototype.buildCdbRequest=function(){if(this.cache.silentModeEnabled())return P.Debug("Request ignored because the global silent mode is enabled"),void this.metricsManager.incSilentModeRequestCount();if(this.requestBuilder.isValid()){var t=Math.min((this.timeout||5e3)+1e3,5e3);return this.adBlockFlagManager.setAdBlockFlagTimer(t),this.timer.sendRequest(this.url),this.requestBuilder.getRequest()}P.Debug("Request ignored because it doesnt contain any slot")},Kt.GetAllAdapters=function(){return window.Criteo.prebid_adapters},Kt.GetAdapter=function(t){var e="string"==typeof t?t:t.bidRequests[0].auctionId,i=Kt.GetAllAdapters();if(i&&e in i)return i[e]},Kt.createCriteoNativeAdWithCallback=function(t,e,i){return window.criteo_prebid_native_slots=window.criteo_prebid_native_slots||{},window.criteo_prebid_native_slots[t]={callback:i,payload:e},'<script type="text/javascript">\n            var win = window;\n            for (var i = 0; i < 10; ++i) {\n                win = win.parent;\n                if (win.criteo_prebid_native_slots) {\n                    var responseSlot = win.criteo_prebid_native_slots["'+t+'"];\n                    responseSlot.callback(responseSlot.payload);\n                    break;\n                }\n            }\n        <\/script>'},Kt.createPrebidNativeAd=function(t){return{title:t.products[0].title,body:t.products[0].description,sponsoredBy:t.advertiser.description,icon:t.advertiser.logo,image:t.products[0].image,clickUrl:t.products[0].click_url,privacyLink:t.privacy.optout_click_url,privacyIcon:t.privacy.optout_image_url,cta:t.products[0].call_to_action,price:t.products[0].price,impressionTrackers:t.impression_pixels.map(function(t){return t.url})}},Kt.prototype.getBidRequestForSlot=function(t){for(var e=0,i=this.bidRequests;e<i.length;e++){var r=i[e];if(r.adUnitCode===t.impid&&(!r.params.zoneId||parseInt(r.params.zoneId,10)===t.zoneid))return r}},Kt.getVideoInfoFromBidRequest=function(t){if(Kt.hasVideoMediaType(t))return new Mt(t.mediaTypes.video.playerSize,t.mediaTypes.video.mimes,t.mediaTypes.video.protocols,t.mediaTypes.video.maxduration,t.mediaTypes.video.api,t.params.video.skip,t.params.video.placement,t.params.video.playbackmethod,t.params.video.minduration,t.params.video.startdelay)},Kt.hasVideoMediaType=function(t){return void 0!==t.params&&void 0!==t.params.video&&!(void 0===t.mediaTypes||void 0===t.mediaTypes.video)},Kt.prototype.interpretResponse=function(t,e){this.timer.requestReceived(),this.adBlockFlagManager.disableAdBlockFlagTimer();var i=wt(t),r={};if(void 0!==i.slots)for(var o=0,n=i.slots;o<n.length;o++)r[(I=n[o]).imp_id]=I;var a,s,c,d,l,u,p,h,f,v,g,m=[];if(t.slots&&Array.isArray(t.slots))for(var y=0,C=t.slots;y<C.length;y++){var I=C[y],b=this.getBidRequestForSlot(I);if(b)if(!0===window.criteo_pubtag.context.isAdBlocked){if(void 0!==(a=I.slotid,s=I.impid,c=I.cpm,d=I.width,l=I.height,u=I.zoneid,p=b.params.nativeCallback,h=I.native,f=I.displayurl,v=I.creative,g=I.deal,T=void 0!==p&&void 0!==h?new rt(a,s,c,d,l,u,p,h,g):void 0===f||void 0!==v&&"<script"!==v.substr(0,7)?void 0!==v?new $(a,s,c,d,l,u,v,g):void 0:new X(a,s,c,d,l,u,f,g))&&It.tryInsertPlaceholder(b.adUnitCode)){var _=It.insertAdIFrame(b.adUnitCode);if(null!=_){var E=new M(_.contentDocument);T.GenerateEvent(E).eval(window.criteo_pubtag)}}}else{var w=b.bidId,S=I.ttl||r[I.slotid]&&r[I.slotid].ttl||60,T={requestId:w,adId:St(),cpm:I.cpm,currency:I.currency,netRevenue:!0,ttl:S,creativeId:w,width:I.width,height:I.height,dealId:I.deal};if(I.native)if(b.params.nativeCallback)T.ad=Kt.createCriteoNativeAdWithCallback(w,I.native,b.params.nativeCallback);else{if(this.enableSendAllBids){P.Error("Not supporting non mediation mode");continue}T.native=Kt.createPrebidNativeAd(I.native),T.mediaType=Ut.Native}else I.video?(T.vastUrl=I.displayurl,T.mediaType=Ut.Video):T.ad=I.creative;m.push(T)}else P.Error("Unable to bid request for slot "+I)}return this.cache.handleResponse(this.slots,t,i,!1),this.metricsManager.storeMetric(this.timer.finish(t.sid,i.slots)),this.cache.clearExpiredItems(),m},Kt.prototype.handleBidWon=function(t){this.updateMetric(t,function(t){t.adapterBidWon=!0})},Kt.prototype.handleBidTimeout=function(){this.timer.requestReceived(!0),this.metricsManager.storeMetric(this.timer.finish()),this.cache.clearExpiredItems()},Kt.prototype.handleSetTargeting=function(t){var e=this;this.timer.setTargeting(),this.updateMetric(t,function(){return e.timer.build()})},Kt.prototype.updateMetric=function(t,e){for(var i=this.metricsManager.getMetrics(!1),r=0;r<i.length;++r)for(var o=0,n=i[r].slots;o<n.length;o++){var a=n[o];if(a.adUnitId===t.adUnitCode){var s=e(a);s&&(i[r]=s)}}this.metricsManager.setMetrics(i)},Kt);function Kt(t,e,i,r,o){var n,a,s,c;this.enableSendAllBids=!0,this.timeout=Dt(r.timeout),this.metricsManager=new yt(t,e,o),this.metricBuilder=new st(this.metricsManager),this.timer=new At(this.metricBuilder,r.auctionStart,this.timeout),this.adBlockFlagManager=y.create(),this.adBlockFlagManager.adBlockFlagEnabled()&&(t=280,window.criteo_pubtag.context.isAdBlocked=!0,a=new Lt),this.auctionId=r.auctionId,this.bidRequests=i,this.slots=[];for(var d,l=!0,u=0,p=i;u<p.length;u++){var h=p[u],f=void 0;h.fpd&&h.fpd.context&&(f=h.fpd.context),h.params.ext&&(f=qt(qt({},f),h.params.ext)),l=this.hasValidNativeParams(h);var v=h.sizes.map(function(t){return new C(t[0],t[1])});(null===(n=h.mediaTypes)||void 0===n?void 0:n.native)&&(0===v.length?v=[new C(2,2)]:v.forEach(function(t,e,i){void 0===t.height&&void 0===t.width&&(i[e]=new C(2,2))})),this.slots.push(new Tt(h.adUnitCode,h.params.zoneId,h.params.nativeCallback,h.transactionId,v,h.params.publisherSubId,h.mediaTypes,Kt.getVideoInfoFromBidRequest(h),f)),s=h.params.networkId||s,d=r.ceh,window.criteo_pubtag.context.ceh=d,h.params.integrationMode&&(c=vt(h.params.integrationMode))}l||P.Warning("All native assets containing URL should be sent as placeholders with sendId(icon, image, clickUrl, privacyLink, privacyIcon)");var g={};r.gdprConsent&&(void 0!==r.gdprConsent.consentString&&(g.consentData=r.gdprConsent.consentString),void 0!==r.gdprConsent.gdprApplies&&(g.gdprApplies=!!r.gdprConsent.gdprApplies),g.version=r.gdprConsent.apiVersion);var m={uspString:r.uspConsent};window.criteo_pubtag.context.publisherExt=r.publisherExt,window.criteo_pubtag.context.userExt=r.userExt,this.cache=new L(window.criteo_pubtag.context,this.slots,s),this.requestBuilder=new _t(this.cache.filterNoBidSlots(this.slots),window.criteo_pubtag.context,this.metricsManager,new gt(!1),t,c,s,e,{ccpaIabConsent:m,gdprConsent:g},o,a),this.url=this.requestBuilder.getUrl(),window.Criteo.prebid_adapters=window.Criteo.prebid_adapters||{},window.Criteo.prebid_adapters[this.auctionId]=this}var Ht=(Vt.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__uspapiLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},Vt.prototype.hasCallerFunctionInWindow=function(){return"function"==typeof this.currentWindow.__uspapi},Vt.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInWindow()||void 0!==this.getCMPFrame()},Vt.prototype.retrieveConsent=function(i){var t=this,r=Pt.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,P.Warning("Timeout: Unable to resolve CCPA consent after "+t.timeout+"ms"),i(void 0)},this.timeout);this.executeCommand("getUSPData",1,function(t,e){o||(clearTimeout(n),e?(P.Debug("CCPA consent retrieved in "+r.elapsed()+"ms"),Vt.processResponseData(t,i)):(P.Warning("Error retrieving CCPA consent data from CMP"),i(void 0)))})},Vt.processResponseData=function(t,e){t?e(t):(P.Warning("Unable to read CCPA consent data from CMP"),e(void 0))},Vt.prototype.executeCommand=function(t,e,i){var n=this;if(!this.hasCallerFunctionInWindow()){P.Debug("No CCPA CMP defined on current frame");var a=this.getCMPFrame();this.currentWindow.__uspapi=function(t,e,i){if(!a)return P.Warning("CCPA CMP not found in any frame"),void i({msg:"CCPA CMP not found in any frame"},!1);var r=Math.random().toString(10),o={__uspapiCall:{command:t,parameter:e,callId:r}};n.uspapiCallbacks[r]=i,a.postMessage(o,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?f(t.data):t.data;if(e&&e.__uspapiReturn&&e.__uspapiReturn.callId&&e.__uspapiReturn.returnValue){var i=e.__uspapiReturn;n.uspapiCallbacks&&n.uspapiCallbacks[i.callId]&&(n.uspapiCallbacks[i.callId](i.returnValue,i.success),delete n.uspapiCallbacks[i.callId])}},!1)}this.currentWindow.__uspapi(t,e,i)},Vt.prototype.hasUserOptOut=function(t){return!(!t||!t.uspString||"1YNY"===t.uspString.toUpperCase()||"1YNN"===t.uspString.toUpperCase()||"1YN-"===t.uspString.toUpperCase()||"1-N-"===t.uspString.toUpperCase()||"1---"===t.uspString)},Vt);function Vt(t,e){void 0===e&&(e=parseInt("50",10)),this.uspapiCallbacks={},this.currentWindow=t,this.timeout=e}var zt=(jt.prototype.getReadyToRetrieveProvider=function(){return this.tcfv2PrivacyProvider.hasCallerFunctionInFrame()?this.tcfv2PrivacyProvider:this.gdprPrivacyProvider.hasCallerFunctionInFrame()?this.gdprPrivacyProvider:void 0!==this.tcfv2PrivacyProvider.getCMPFrame()?this.tcfv2PrivacyProvider:void 0!==this.gdprPrivacyProvider.getCMPFrame()?this.gdprPrivacyProvider:void 0},jt.prototype.retrieveConsentForPassback=function(t){var e=this.getReadyToRetrieveProvider();void 0===e&&(P.Warning("No compatible GDPR privacy provider found"),t(void 0)),e===this.gdprPrivacyProvider?this.gdprPrivacyProvider.retrieveConsentForPassback(t):e===this.tcfv2PrivacyProvider&&this.tcfv2PrivacyProvider.retrieveConsent(t)},jt.prototype.retrieveConsent=function(t){var e=this.getReadyToRetrieveProvider();void 0===e&&(P.Warning("No compatible GDPR privacy provider found"),t(void 0)),null==e||e.retrieveConsent(t)},jt.prototype.readyToRetrieve=function(){return this.tcfv2PrivacyProvider.readyToRetrieve()||this.gdprPrivacyProvider.readyToRetrieve()},jt);function jt(t,e){this.gdprPrivacyProvider=t,this.tcfv2PrivacyProvider=e}var Yt=(Xt.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__cmpLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},Xt.prototype.hasCallerFunctionInFrame=function(){return"function"==typeof this.currentWindow.__cmp},Xt.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInFrame()||void 0!==this.getCMPFrame()},Xt.prototype.pingWithTimeout=function(r,o,t,e,i){function n(t,e){P.Warning(e),clearTimeout(t),i()}var a=this;return setTimeout(function(){var i=setTimeout(function(){n(o,"Timeout: Unable to get ping return after "+t+"ms")},t);a.executeCommand("ping",null,function(t,e){clearTimeout(i),e?(P.Debug("GDPR CMP ping returned in "+r.elapsed()+"ms"),!0!==t.cmpLoaded&&n(o,"GDPR ping returned cmpLoaded which is not true"),P.Debug("GDPR ping returned cmpLoaded which is true")):n(o,"Error sending ping to GDPR CMP")})},e)},Xt.prototype.retrieveConsent=function(i){var t=this,r=Pt.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,P.Warning("Timeout: Unable to resolve GDPR consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,P.Warning("Timeout: Unable to ping GDPR API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getConsentData",null,function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(P.Debug("GDPR consent retrieved in "+r.elapsed()+"ms"),Xt.processConsentData(t,i)):(P.Warning("Error retrieving GDPR consent data from CMP"),i(void 0)))})},Xt.prototype.retrieveConsentForPassback=function(i){var t=this,r=Pt.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,P.Warning("Timeout: Unable to resolve GDPR consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,P.Warning("Timeout: Unable to ping GDPR API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getVendorConsents",[91],function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(P.Debug("Consent (getVendorConsents) retrieved in "+r.elapsed()+"ms"),Xt.processConsentData(t,i)):(P.Warning("Error while calling getVendorConsents from CMP"),i(void 0)))})},Xt.processConsentData=function(t,e){if(t){var i={};void 0!==t.consentData&&(i.consentData=t.consentData),void 0!==t.gdprApplies&&(i.gdprApplies=!!t.gdprApplies),e(i)}else P.Warning("Unable to read GDPR consent data from CMP"),e(void 0)},Xt.prototype.executeCommand=function(t,e,i){var n=this;if(!this.hasCallerFunctionInFrame()){P.Debug("No GDPR CMP defined on current frame");var a=this.getCMPFrame();this.currentWindow.__cmp=function(t,e,i){if(!a)return P.Warning("GDPR CMP not found in any frame"),void i({msg:"GDPR CMP not found in any frame"},!1);var r=Math.random().toString(10),o={__cmpCall:{command:t,parameter:e,callId:r}};n.cmpCallbacks[r]=i,a.postMessage(o,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?f(t.data):t.data;if(e&&e.__cmpReturn&&e.__cmpReturn.callId&&e.__cmpReturn.returnValue){var i=e.__cmpReturn;n.cmpCallbacks&&n.cmpCallbacks[i.callId]&&(n.cmpCallbacks[i.callId](i.returnValue,i.success),delete n.cmpCallbacks[i.callId])}},!1)}this.currentWindow.__cmp(t,e,i)},Xt);function Xt(t,e,i,r){void 0===e&&(e=parseInt("10000",10)),void 0===i&&(i=Math.min(e,parseInt("50",10))),void 0===r&&(r=Math.min(e,parseInt("1000",10))),this.cmpCallbacks={},this.currentWindow=t,this.timeout=e,this.pingTimeout=i,this.pingDelay=r}var Jt=(Zt.prototype.getCMPFrame=function(){for(var t,e=this.currentWindow,i=0;i<10;++i){try{e.frames.__tcfapiLocator&&(t=e)}catch(t){}if(e===this.currentWindow.top)break;e=e.parent}return t},Zt.prototype.hasCallerFunctionInFrame=function(){return"function"==typeof this.currentWindow.__tcfapi},Zt.prototype.readyToRetrieve=function(){return this.hasCallerFunctionInFrame()||void 0!==this.getCMPFrame()},Zt.prototype.pingWithTimeout=function(i,r,t,e,o){function n(t,e){P.Warning(e),clearTimeout(t),o()}var a=this;return setTimeout(function(){var e=setTimeout(function(){n(r,"Timeout: Unable to get TCFv2 ping return after "+t+"ms")},t);a.executeCommand("ping",2,function(t){clearTimeout(e),P.Debug("TCFv2 CMP ping returned in "+i.elapsed()+"ms"),"error"===t.cmpStatus?n(r,"Error status on ping to TCFv2 CMP"):(!0!==t.cmpLoaded&&n(r,"TCFv2 ping returned cmpLoaded which is not true"),P.Debug("TCFv2 ping returned cmpLoaded which is true"))})},e)},Zt.prototype.retrieveConsent=function(i){var t=this,r=Pt.CreateRunning(),o=!1,n=setTimeout(function(){o=!0,P.Warning("Timeout: Unable to resolve TCFv2 consent after "+t.timeout+"ms"),i(void 0)},this.timeout),a=this.pingWithTimeout(r,n,this.pingTimeout,this.pingDelay,function(){o=!0,P.Warning("Timeout: Unable to ping TCFv2 API after "+t.pingTimeout+"ms"),i(void 0)});this.executeCommand("getTCData",2,function(t,e){clearTimeout(a),o||(clearTimeout(n),e?(P.Debug("TCFv2 consent retrieved in "+r.elapsed()+"ms"),Zt.processResponseData(t,i)):(P.Warning("Error retrieving TCFv2 consent data from CMP"),i(void 0)))},[91])},Zt.processResponseData=function(t,e){if(t){var i={};void 0!==t.tcData&&(i.consentData=t.tcData),void 0!==t.gdprApplies&&(i.gdprApplies=!!t.gdprApplies),i.version=t.tcfPolicyVersion?t.tcfPolicyVersion:2,e(i)}else P.Warning("Unable to read GDPR consent data from CMP"),e(void 0)},Zt.prototype.executeCommand=function(t,e,i,r){var a=this;if(!this.hasCallerFunctionInFrame()){P.Debug("No TCFv2 CMP defined on current frame");var s=this.getCMPFrame();this.currentWindow.__tcfapi=function(t,e,i,r){if(!s)return P.Warning("TCFv2 CMP not found in any frame"),void i({msg:"TCFv2 CMP not found in any frame"},!1);var o=Math.random().toString(10),n={__tcfapiCall:{command:t,version:e,parameter:r,callId:o}};a.cmpCallbacks[o]=i,s.postMessage(n,"*")},this.currentWindow.addEventListener("message",function(t){var e="string"==typeof t.data?f(t.data):t.data;if(e&&e.__tcfapiReturn&&e.__tcfapiReturn.callId&&e.__tcfapiReturn.returnValue){var i=e.__tcfapiReturn;a.cmpCallbacks&&a.cmpCallbacks[i.callId]&&"function"==typeof a.cmpCallbacks[i.callId]&&(a.cmpCallbacks[i.callId](i.returnValue,i.success),delete a.cmpCallbacks[i.callId])}},!1)}this.currentWindow.__tcfapi(t,e,i,r)},Zt);function Zt(t,e,i,r){void 0===e&&(e=parseInt("10000",10)),void 0===i&&(i=Math.min(e,parseInt("50",10))),void 0===r&&(r=Math.min(e,parseInt("1000",10))),this.cmpCallbacks={},this.currentWindow=t,this.timeout=e,this.pingTimeout=i,this.pingDelay=r}var Qt=($t.prototype.send=function(t,e,i,r){var o=void 0!==this.data?"POST":"GET",n=this.getXMLHttpRequest(o,t,e,i,r);if(void 0!==n)n.send(this.data);else{var a=this.getXDomainRequest(o,t,e,i,r);void 0!==a&&a.send(this.data)}},$t.prototype.getXMLHttpRequest=function(t,e,i,r,o){var n=new XMLHttpRequest;if("withCredentials"in n)return n.open(t,this.url,!0),n.timeout=o||$t.LOCAL_PASSBACK_TIMEOUT,this.contentType?n.setRequestHeader("Content-type",this.contentType):"POST"===t&&n.setRequestHeader("Content-type","application/x-www-form-urlencoded"),n.withCredentials=this.withCredentials,n.onload=function(){4===n.readyState&&200===n.status?e(n.responseText):i(n.readyState,n.status)},n.onerror=function(){i(void 0,void 0)},r&&(n.ontimeout=r),n},$t.prototype.getXDomainRequest=function(t,e,i,r,o){if("undefined"!=typeof XDomainRequest){var n=new XDomainRequest;return n.timeout=o||$t.LOCAL_PASSBACK_TIMEOUT,n.open(t,this.url),n.onload=function(){void 0!==n.responseText?e(n.responseText):i(void 0,void 0)},n.onerror&&(n.onerror=function(){i(void 0,void 0)}),n.ontimeout&&r&&(n.ontimeout=r),n}},$t.LOCAL_PASSBACK_TIMEOUT=3e4,$t);function $t(t,e,i,r){void 0===r&&(r=!0),this.url=t,this.data=e,this.contentType=i,this.withCredentials=r}var te,ee,ie=((te=function(t,e){return(te=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}te(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(re,ee=U),re.prototype.setGDPRConsent=function(t){this.gdprConsent=t},re.prototype.setCCPAIabConsent=function(t){this.ccpaIabConsent=t},re.prototype.getMetricBuilder=function(){return this.metricBuilder},re.prototype.getMetricsManager=function(){return this.metricsManager},re.prototype.eval=function(t){this.evalWithTimeout(t,void 0)},re.prototype.evalWithTimeout=function(t,e){var r=this,i=re.getCriteoAdapterBidRequest(),o=re.getRequestAuctionStart(i),n=e||Dt(i&&i.timeout),a=new At(this.metricBuilder,o,n),s=new _t(this.slots,t.context,this.metricsManager,this.urlBuilder,this.profileId,this.integrationMode,this.networkId,this.adapterVersion,{ccpaIabConsent:this.ccpaIabConsent,gdprConsent:this.gdprConsent},void 0,this.viewportComputer);if(s.isValid()&&"undefined"!=typeof JSON){var c=s.getRequest(),d=JSON.stringify(c),l=s.getUrl(),u=new Qt(l,d,"application/x-www-form-urlencoded");a.sendRequest(l),u.send(function(t){try{a.requestReceived();var e=f(t)||{},i=wt(e);void 0!==r.callbackSuccess&&r.callbackSuccess(JSON.stringify(e),i),r.metricsManager.storeMetric(a.finish(e.sid,i.slots))}catch(t){P.Error("Error onSuccess: "+t.toString())}},function(t,e){try{a.requestReceived(),void 0!==r.callbackError&&r.callbackError(t,e),r.metricsManager.storeMetric(a.finish())}catch(t){P.Error("Error onError: "+t.toString())}},function(){try{a.requestReceived(!0),void 0!==r.callbackTimeout&&r.callbackTimeout(),r.metricsManager.storeMetric(a.finish())}catch(t){P.Error("Error onTimeout: "+t.toString())}},this.timeout)}else this.callbackError(void 0,void 0)},re.getCriteoAdapterBidRequest=function(){try{return window.pbjs._bidsRequested.find(function(t){return"criteo"===t.bidderCode})}catch(t){return}},re.getRequestAuctionStart=function(t){return t&&t.auctionStart},re.NAME="directbidding",re);function re(t,e,i,r,o,n,a,s,c,d,l,u){var p=ee.call(this,re.NAME)||this;return p.profileId=t,p.urlBuilder=e,p.slots=i,p.metricsManager=u||new yt(t),p.metricBuilder=new st(p.metricsManager),p.callbackSuccess=r,p.callbackError=o,p.callbackTimeout=n,p.timeout=a,p.networkId=s,p.integrationMode=c,p.adapterVersion=d,p.viewportComputer=l,p}var oe,ne,ae=((oe=function(t,e){return(oe=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var i in e)e.hasOwnProperty(i)&&(t[i]=e[i])})(t,e)},function(t,e){function i(){this.constructor=t}oe(t,e),t.prototype=null===e?Object.create(e):(i.prototype=e.prototype,new i)})(se,ne=U),se.prototype.eval=function(e){var i=this,t=this.gdprPrivacyProvider.readyToRetrieve(),r=this.ccpaPrivacyProvider.readyToRetrieve();if(t||r){var o,n,a=[];t&&a.push(Yt),r&&a.push(Ht),t&&this.gdprPrivacyProvider.retrieveConsent(function(t){a.splice(a.indexOf("GDPR"),1),0===a.length?i.evalWithCmp(e,t,n):o=t}),r&&this.ccpaPrivacyProvider.retrieveConsent(function(t){a.splice(a.indexOf("CCPA"),1),0===a.length?i.evalWithCmp(e,o,t):n=t})}else this.evalWithCmp(e,void 0,void 0)},se.prototype.evalWithCmp=function(t,e,i){var r=this;if(this.cache.silentModeEnabled())return P.Debug("Request ignored because the global silent mode is enabled"),this.getMetricsManager().incSilentModeRequestCount(),void this.callbackSuccess("",void 0);setTimeout(function(){return r.onTimeout()},this.timeout||3e3),this.directBiddingEvent.setGDPRConsent(e),this.directBiddingEvent.setCCPAIabConsent(i),this.directBiddingEvent.evalWithTimeout(t,this.timeout)},se.prototype.onSuccess=function(t,e){if(this.hasResponded=!0,void 0!==e){var i=f(t);this.cache.handleResponse(this.slots,i,e,this.hasTimeouted)}this.hasTimeouted||this.callbackSuccess(t,e),this.cache.clearExpiredItems()},se.prototype.onError=function(t,e){this.hasResponded=!0,this.hasTimeouted||this.callbackError(t,e),this.cache.clearExpiredItems()},se.prototype.onHttpTimeout=function(){this.hasResponded=!0,this.hasTimeouted||this.callbackTimeout(),this.cache.clearExpiredItems()},se.prototype.onTimeout=function(){if(!this.hasResponded){this.hasTimeouted=!0;var t=this.cache.getCachedBids(this.slots);0===t.length?this.callbackTimeout():(P.Debug("Cached bids returned because of timeout: ['"+t.map(function(t){return t.impid}).join("', '")+"']"),this.getMetricBuilder().withCachedBidsReturned(t),this.callbackSuccess(JSON.stringify({slots:t}),void 0))}},se.prototype.getMetricBuilder=function(){return this.directBiddingEvent.getMetricBuilder()},se.prototype.getMetricsManager=function(){return this.directBiddingEvent.getMetricsManager()},se.prototype.getBidCache=function(){return this.cache},se.NAME="directbidding",se);function se(t,e,i,r,o,n,a,s,c,d,l,u,p,h){var f=ne.call(this,se.NAME)||this,v=Math.max(10*(a||3e3),3e3);return f.cache=new L(window.criteo_pubtag.context,i,s),f.directBiddingEvent=new ie(t,e,f.cache.filterNoBidSlots(i),function(t,e){return f.onSuccess(t,e)},function(t,e){return f.onError(t,e)},function(){return f.onHttpTimeout()},v,s,c,d,l,u),f.slots=i,f.callbackSuccess=r,f.callbackError=o,f.callbackTimeout=n,f.timeout=a,f.hasTimeouted=!1,f.hasResponded=!1,f.gdprPrivacyProvider=p||new zt(new Yt(window),new Jt(window)),f.ccpaPrivacyProvider=h||new Ht(window),f}var ce={prebid:"criteo_fast_bid",standalone:"criteo_fast_bid_standalone",index:"criteo_fast_bid_index"};var de=(le.LoadPolyfills=function(){le.DefineIsArray(),le.DefineIndexOf(),le.DefineFilter()},le.DefineIsArray=function(){Array.isArray||(Array.isArray=function(t){return"[object Array]"===Object.prototype.toString.call(t)})},le.DefineIndexOf=function(){Array.prototype.indexOf||(Array.prototype.indexOf=function(t,e){if(void 0===e&&(e=0),void 0===this)throw new TypeError("'this' is null or not defined");var i=this.length;if(0===i)return-1;if(i<=e)return-1;for(var r=Math.max(0<=e?e:i-Math.abs(e),0);r<i;){if(r in this&&this[r]===t)return r;r++}return-1})},le.DefineFilter=function(){Array.prototype.filter||(Array.prototype.filter=function(t){if(void 0===this||void 0===this)throw new TypeError;var e=this.length;if("function"!=typeof t)throw new TypeError;for(var i=[],r=2<=arguments.length?arguments[1]:void 0,o=0;o<e;o++)if(o in this){var n=this[o];t.call(r,n,o,this)&&i.push(n)}return i})},le);function le(){}var ue,pe,he=(fe.SetCookie=function(t,e,i,r,o){void 0===o&&(o=!1);var n=r||document,a=n.location.hostname,s=new Date;s.setTime(s.getTime()+60*i*60*1e3);var c="expires="+s.toUTCString();if(!o)return fe.setCookieString(t,e,c,void 0,n),a;for(var d=a.split("."),l=0;l<d.length;++l){var u=d.slice(d.length-l-1,d.length).join(".");fe.setCookieString(t,e,c,u,n);var p=fe.GetCookie(t,r);if(p&&p===e)return u}return a},fe.DeleteCookie=function(t,e,i){void 0===i&&(i=!1),fe.SetCookie(t,"",0,e,i)},fe.GetCookie=function(t,e){for(var i=0,r=(e||document).cookie.split(";");i<r.length;i++){var o=r[i],n=o.substr(0,o.indexOf("=")).replace(/^\s+|\s+$/g,""),a=o.substr(o.indexOf("=")+1);if(n===t)return decodeURIComponent(a)}},fe.setCookieString=function(t,e,i,r,o){var n=t+"="+encodeURIComponent(e)+";"+i+";";r&&""!==r&&(n+="domain=."+r+";"),o.cookie=n+"path=/"},fe);function fe(){}function ve(e,i){try{return decodeURIComponent(e)}catch(t){return void 0!==i?i:e}}(pe=ue=ue||{})[pe.None=0]="None",pe[pe.Cookie=1]="Cookie",pe[pe.LocalStorage=2]="LocalStorage";var ge,me,ye=(Ce.isSafariBrowser=function(){return null!==navigator.userAgent.match(Ce.SAFARI_CHECK_REGEX)},Ce.isAndroidBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("android")},Ce.isFirefoxBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("firefox")},Ce.isEdgeChromiumBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("edg/")},Ce.isEdgeLegacyBrowser=function(){return-1<navigator.userAgent.toLowerCase().indexOf("edge/")},Ce.prototype.synchronizeCriteoUid=function(t,e){var i=this;if((t||Ce.isSafariBrowser()||Ce.isAndroidBrowser()||Ce.isFirefoxBrowser()||Ce.isEdgeChromiumBrowser()||Ce.isEdgeLegacyBrowser())&&(e&&(this.tcfV2ConsentString=e),this.topWin.addEventListener))if("complete"===this.topDoc.readyState)this.appendGumIframeIfDoesNotExist();else{var r=function(){i.topDoc.removeEventListener("DOMContentLoaded",r),i.topWin.removeEventListener("load",r),i.appendGumIframeIfDoesNotExist()};this.topWin.addEventListener("load",r,!1),this.topDoc.addEventListener("DOMContentLoaded",r,!1)}},Ce.prototype.appendGumIframeIfDoesNotExist=function(){var n=this,t=this.createGumIframe();this.topDoc.getElementById(Ce.SYNCFRAME_ID)||(this.topWin.addEventListener("message",function(t){var e=t.data;if(e&&e.isCriteoMessage)if(t.stopImmediatePropagation(),e.optout)n.setClientSideOptOut(),n.deleteClientSideUid(),n.deleteClientSideIdfs(),n.deleteClientSideSecureId(),n.deleteBundle();else{if(e.uid&&n.setClientSideUid(e.uid),e.idfs&&n.setClientSideIdfs(e.idfs),e.callbacks)for(var i=0,r="string"==typeof e.callbacks?[e.callbacks]:e.callbacks;i<r.length;i++){var o=r[i];(new Image).src=o}else e.bundle&&n.setBundle(e.bundle);e.removeSid?n.deleteClientSideSecureId():e.sid&&n.setClientSideSecureId(e.sid)}},!0),this.topDoc.body.appendChild(t))},Ce.prototype.getClientSideUid=function(){return this.getFromAllStorages(Ce.GUID_COOKIE_NAME)},Ce.prototype.setClientSideUid=function(t){this.writeOnAllStorages(Ce.GUID_COOKIE_NAME,t,Ce.GUID_RETENTION_TIME_HOUR)},Ce.prototype.deleteClientSideUid=function(){this.deleteFromAllStorage(Ce.GUID_COOKIE_NAME)},Ce.prototype.getBundle=function(){return this.getFromAllStorages(Ce.BUNDLE_COOKIE_NAME)},Ce.prototype.setBundle=function(t){this.writeOnAllStorages(Ce.BUNDLE_COOKIE_NAME,t,Ce.GUID_RETENTION_TIME_HOUR)},Ce.prototype.deleteBundle=function(){this.deleteFromAllStorage(Ce.BUNDLE_COOKIE_NAME)},Ce.prototype.getClientSideOptOut=function(){var t=this.getFromAllStorages(Ce.OPTOUT_COOKIE_NAME);return{value:"1"===t.value,origin:t.origin}},Ce.prototype.setClientSideOptOut=function(){this.writeOnAllStorages(Ce.OPTOUT_COOKIE_NAME,"1",Ce.OPTOUT_RETENTION_TIME_HOUR)},Ce.prototype.deleteClientSideIdfs=function(){this.deleteFromAllStorage(Ce.IDFS_COOKIE_NAME)},Ce.prototype.getClientSideIdfs=function(){return this.getFromAllStorages(Ce.IDFS_COOKIE_NAME)},Ce.prototype.setClientSideIdfs=function(t){this.writeOnAllStorages(Ce.IDFS_COOKIE_NAME,t,Ce.GUID_RETENTION_TIME_HOUR)},Ce.prototype.getClientSideSecureId=function(){return this.getFromAllStorages(Ce.SECURE_ID_COOKIE_NAME)},Ce.prototype.setClientSideSecureId=function(t){this.writeOnAllStorages(Ce.SECURE_ID_COOKIE_NAME,t,Ce.GUID_RETENTION_TIME_HOUR)},Ce.prototype.deleteClientSideSecureId=function(){this.deleteFromAllStorage(Ce.SECURE_ID_COOKIE_NAME)},Ce.prototype.getClientSideLocalWebId=function(){return this.getFromAllStorages(Ce.LOCAL_WEB_ID_COOKIE_NAME)},Ce.prototype.checkCookiesAreWriteable=function(){var t="cto_writeable";he.SetCookie(t,"1",1,this.topDoc,!0);var e="1"===he.GetCookie(t,this.topDoc);return he.DeleteCookie(t,this.topDoc,!0),e},Ce.prototype.createGumIframe=function(){var t=this.topDoc.createElement("iframe");return t.src=this.buildSyncframeSrc(),t.id=Ce.SYNCFRAME_ID,t.style.display="none",t},Ce.prototype.writeOnAllStorages=function(t,e,i){this.localStorageEnabled&&this.localStorageHelper.setItem(t,e),he.SetCookie(t,e,i,this.topDoc,!0)},Ce.prototype.getFromAllStorages=function(t){var e,i=he.GetCookie(t,this.topDoc);return this.localStorageEnabled&&(e=this.localStorageHelper.getItem(t)||void 0),{value:i||e,origin:(i&&ue.Cookie)|(e&&ue.LocalStorage)}},Ce.prototype.deleteFromAllStorage=function(t){he.DeleteCookie(t,this.topDoc,!0),this.localStorageEnabled&&this.localStorageHelper.removeItem(t)},Ce.prototype.getTld=function(){var t=he.SetCookie(Ce.TLD_TEST_COOKIE_NAME,"test",1,this.topDoc,!0);return he.DeleteCookie(Ce.TLD_TEST_COOKIE_NAME,this.topDoc,!0),t},Ce.prototype.buildSyncframeSrc=function(){var t,e,i=this.getClientSideUid(),r=this.getClientSideIdfs(),o=this.getClientSideOptOut(),n=this.getClientSideSecureId(),a=this.getClientSideLocalWebId(),s=this.getBundle(),c=this.getTld(),d=encodeURIComponent((t=this.topUrl,(e=document.createElement("a")).href=t,{protocol:e.protocol,host:e.host,hostname:e.hostname,pathname:"/"===e.pathname[0]?e.pathname.slice(1):e.pathname,search:e.search,href:e.href}).hostname),l=this.canWriteCookies,u="https://gum.criteo.com/syncframe?topUrl="+d+(this.isDebug?"&debug=1":"")+(this.tcfV2ConsentString?"&gdprString="+this.tcfV2ConsentString:"");return u+="#"+JSON.stringify({optout:o,uid:i,idfs:r,sid:n,origin:"publishertag",version:89,lwid:a,tld:c,bundle:s,topUrl:d,cw:l})},Ce.GUID_COOKIE_NAME="cto_idcpy",Ce.GUID_RETENTION_TIME_HOUR=9360,Ce.IDFS_COOKIE_NAME="cto_idfs",Ce.SECURE_ID_COOKIE_NAME="cto_sid",Ce.LOCAL_WEB_ID_COOKIE_NAME="cto_lwid",Ce.BUNDLE_COOKIE_NAME="cto_bundle",Ce.OPTOUT_COOKIE_NAME="cto_optout",Ce.OPTOUT_RETENTION_TIME_HOUR=43200,Ce.TLD_TEST_COOKIE_NAME="cto_pub_test_tld",Ce.SYNCFRAME_ID="criteo-syncframe",Ce.SAFARI_CHECK_REGEX=/^Mozilla\/5\.0 \([^)]+\) AppleWebKit\/[^ ]+ \(KHTML, like Gecko\) Version\/([^ ]+)( Mobile\/[^ ]+)? Safari\/[^ ]+$/i,Ce);function Ce(t,e,i){this.isDebug=e,this.topWin=t,this.topDoc=t.document,this.localStorageHelper=new o(this.topWin),this.localStorageEnabled=this.localStorageHelper.checkLocalStorage(),this.canWriteCookies=this.checkCookiesAreWriteable(),this.topUrl=i}(me=ge=ge||{})[me.InFriendlyIframe=1]="InFriendlyIframe",me[me.InUnfriendlyIframe=2]="InUnfriendlyIframe",me[me.DirectIntegration=3]="DirectIntegration";var Ie=(be.prototype.getContextFlags=function(){var t="";return t+=this.debugMode?"&debug=1":"",t+=this.noLog?"&nolog=1":""},be.prototype.getDisplayContext=function(t){return xt.inIframe()?t.err?ge.InUnfriendlyIframe:ge.InFriendlyIframe:ge.DirectIntegration},be.prototype.getQueryStringParams=function(t){var e={},i=t.split("?");if(1<i.length)for(var r=0,o=i[1].split("&");r<o.length;r++){var n=o[r].split("=");e[ve(n[0])]=ve(n[1])}return e},be.prototype.synchronizeCriteoUid=function(t){var e=this.cookieSynchronizerFactory();this.ctoIdOnPublisherDomain=e.getClientSideUid().value,this.isOptOut=e.getClientSideOptOut().value,this.idfs=e.getClientSideIdfs().value,this.secureId=e.getClientSideSecureId().value,this.bundle=e.getBundle().value,e.synchronizeCriteoUid(!1,t)},be.prototype.getIdfs=function(){return[this.idfs,this.secureId].join(":")},be.prototype.setIdfs=function(t){var e=t.split(":");e[0]&&(this.idfs=e[0]),e[1]&&(this.secureId=e[1])},be.prototype.computeShouldIgnoreSilentMode=function(){return Math.floor(100*Math.random())<5},be.prototype.setSilentModeIgnored=function(){this.silentModeIgnored=!0},be.prototype.retrievePrivacyConsent=function(e){var t=this.tcfv2PrivacyProvider.readyToRetrieve(),i=this.ccpaPrivacyProvider.readyToRetrieve();t||i||e(void 0,void 0);var r,o,n=[];t&&n.push(Jt),i&&n.push(Ht),t&&this.tcfv2PrivacyProvider.retrieveConsent(function(t){n.splice(n.indexOf("TCF"),1),0===n.length?e(o,t):r=t}),i&&this.ccpaPrivacyProvider.retrieveConsent(function(t){n.splice(n.indexOf("CCPA"),1),0===n.length?e(t,r):o=t})},be);function be(t,e,i,r,o){var n=this;this.charset=t.charset||t.characterSet||"";var a=xt.getHighestAccessibleWindow(e);this.displayContext=this.getDisplayContext(a),this.highestAccessibleUrl=xt.getHighestAccessibleUrl(a),this.ccpaPrivacyProvider=i||new Ht(e),this.tcfv2PrivacyProvider=o||new Jt(e),this.cookieSynchronizerFactory=r||function(){return new ye(a.topFrame,n.debugMode,n.highestAccessibleUrl)},this.retrievePrivacyConsent(function(t,e){n.ccpaPrivacyProvider.hasUserOptOut(t)||n.synchronizeCriteoUid(null===e||void 0===e?void 0:e.consentData)});var s,c=this.getQueryStringParams(this.highestAccessibleUrl);this.debugMode="1"===c.pbt_debug||!1,this.noLog="1"===c.pbt_nolog||!1,this.shouldIgnoreSilentMode=this.computeShouldIgnoreSilentMode(),this.silentModeIgnored=!1,this.debugMode&&(s=d.Debug,P.LOGLEVEL=s),this.location=e.location,this.dising=!1,this.ct0=void 0,this.wpdt0=void 0,this.isAdBlocked=void 0,this.rtaVarNames=[]}var _e=function(){this.bids={},this.lineItemRanges=[],this.impIds=[]};var Ee,we,Se,Te,Me,Pe=(Re.prototype.push=function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];for(var i=0,r=t;i<r.length;i++){var o=r[i];this.events.push(o)}this.evalEvents()},Re.prototype.evalEvents=function(){for(var t=0;t<this.events.length;){var e=this.events[t];if("conditionalEvent"!==e.name||e.canEval()){var i=this.events.splice(t,1);try{i[0].eval(this)}catch(t){P.Error("An exception occurred processing an event: "+t.toString())}}else t++}},Re.VERSION=89,Re);function Re(){this.standaloneBidder=new _e,this.events=[],this.context=new Ie(document,window),P.Debug("Publisher Tag loaded")}function Ae(t){function e(){try{return i.apply(this,arguments)}catch(t){P.Error("Exception caught: "+t.toString())}}var i=t;for(var r in e.prototype=i.prototype,i)i.hasOwnProperty(r)&&(e[r]=i[r]);return e}window.criteo_pubtag||(de.LoadPolyfills(),window.criteo_pubtag=new Pe),window.Criteo=function t(e){for(var i in e)if(i in e){var r=e[i];"function"==typeof r?e[i]=Ae(r):"object"==typeof r&&(e[i]=t(r))}return e}({PubTag:{Adapters:{Prebid:Gt},DirectBidding:{DirectBiddingEvent:ae,DirectBiddingSlot:Tt,DirectBiddingUrlBuilder:gt,Size:C}},events:window.Criteo?window.Criteo.events:[],passbackEvents:window.Criteo?window.Criteo.passbackEvents:[],usePrebidEvents:!window.Criteo||window.Criteo.usePrebidEvents}),!1!==window.Criteo.usePrebidEvents&&(window.Criteo.events=(Ee=window.Criteo.events,we={push:function(){for(var t=[],e=0;e<arguments.length;e++)t[e]=arguments[e];if(void 0!==t)for(var i=0,r=t;i<r.length;i++){var o=r[i];"function"==typeof o&&Ae(o)()}}},Ee&&Array.isArray(Ee)&&we.push.apply(we,Ee),we)),Se="prebid",Te=new o,Me=ce[Se],Te.checkLocalStorage()&&null===Te.getItem(Me,864e5)&&new Qt("https://static.criteo.net/js/ld/publishertag."+Se+".js",void 0,void 0,!1).send(function(t){Te.setItem(Me,t,864e5)},function(t,e){P.Error("Could not update FastBid"+(e?" ("+e+")":""))})}();</script><script src="https://www.gstatic.com/recaptcha/releases/JPZ52lNx97aD96bjM7KaA0bo/recaptcha__ja.js" type="text/javascript" async=""></script><script src="https://connect.facebook.net/ja_JP/sdk.js?hash=50bf0079649199f373ce21b95ba7a59c&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script src="https://www.hatena.ne.jp/notify/notices.count.json?services=1&amp;callback=jQuery112409428930004622869_1589673241555&amp;_=1589673241556" async=""></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large">
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11">
+  <title>Selenideを試した - なべ’s blog</title>
+
+  
+  <link href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" rel="canonical">
+
+
+
+  
+  
+
+<meta content="Selenideを試した - なべ’s blog" itemprop="name">
+
+  <meta content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" itemprop="image">
+
+
+  <meta content="Selenideを試した - なべ’s blog" property="og:title">
+<meta content="article" property="og:type">
+  <meta content="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" property="og:url">
+
+  <meta content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" property="og:image">
+
+<meta content="Selenideを試した - なべ’s blog" property="og:image:alt">
+    <meta content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄ (@backpaper0) 2016年12月2日これを拝聴して便利に感じたので試してみた。スライドはこちら。 Try Selenide Selenideとは？ SelenideはSelenum WebDriverをラップしたブラウザテストの自動化フレームワークのこと。 Sele…" property="og:description">
+<meta content="なべ’s blog" property="og:site_name">
+
+  <meta content="1481530485" property="article:published_time">
+
+    <meta content="/IT系" property="article:tag">
+    <meta content="/Java" property="article:tag">
+      <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png">  <meta name="twitter:title" content="Selenideを試した - なべ’s blog">    <meta name="twitter:description" content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄…">  <meta name="twitter:app:name:iphone" content="はてなブログアプリ">
+  <meta name="twitter:app:id:iphone" content="583299321">
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445">
+  
+    <meta name="description" content="先日参加した JJUG CCC 2016 FALL で、うらがみさんがSelenideの発表をしていた。明日はJJUG CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） https://t.co/q64G2cm42m #ccc_c6— うらがみ⛄ (@backpaper0) 2016年12月2日これを拝聴して便利に感じたので試してみた。スライドはこちら。 Try Selenide Selenideとは？ SelenideはSelenum WebDriverをラップしたブラウザテストの自動化フレームワークのこと。 Sele…">
+
+
+  
+<script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script><script src="http://www.googletagmanager.com/gtag/js?id=G-2M21NTEWEJ&amp;l=dataLayer&amp;cx=c" type="text/javascript" async=""></script><script id="facebook-jssdk" src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;appId=719729204785177&amp;version=v2.7"></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-P4CXTW" async=""></script><script id="embed-gtm-data-layer-loader" data-data-layer-page-specific='{"hatenablog":{"blogs_permalink":{"blog_hide_afc_func":"false","entry_afc_issued":"false","is_blog_sleeping":"false","is_author_pro":"false","blog_struct_hide_afc":"false","has_related_entries_with_elasticsearch":"true","brand_hide_afc":"false","blog_hide_afc_field":"false","blog_afc_issued":"false"}}}'>
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+  <link href="http://nave-kazu.hatenablog.com/favicon" rel="shortcut icon">
+<link href="https://cdn.blog.st-hatena.com/images/touch-icon-iphone-retina.png" rel="apple-touch-icon">
+<link href="https://cdn.blog.st-hatena.com/images/common/meta-icon-global.png" rel="icon" sizes="192x192">
+
+  
+
+<link title="Atom" href="http://nave-kazu.hatenablog.com/feed" rel="alternate" type="application/atom+xml">
+<link title="RSS2.0" href="http://nave-kazu.hatenablog.com/rss" rel="alternate" type="application/rss+xml">
+<link title="oEmbed Profile of Selenideを試した" href="https://hatenablog.com/oembed?url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;format=json" rel="alternate" type="application/json+oembed">
+<link title="oEmbed Profile of Selenideを試した" href="https://hatenablog.com/oembed?url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;format=xml" rel="alternate" type="text/xml+oembed">
+  
+  <link href="http://www.hatena.ne.jp/nave_kazu/" rel="author">
+
+  
+
+
+  
+    <link href="https://cdn.blog.st-hatena.com/css/blog.css?version=d43439952f020f6c8eeda20dc8e7244c6a41d9ba&amp;env=production" rel="stylesheet" type="text/css">
+
+    
+  <link href="https://usercss.blog.st-hatena.com/blog_style/8454420450073000284/6767bd002f1cc7e943c4b832aefa846a228a2cdc" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+    <script src="https://cdn.pool.st-hatena.com/valve/valve.js" async=""></script>
+<script id="test-valve-definition">
+  var valve = window.valve || [];
+
+  valve.push(function(v) {
+    v.config({
+      service: 'blog',
+      content: {
+        result: 'adtrust',
+        documentIds: ["blog:entry:10328749687198103198"]
+      }
+    });
+    v.defineDFPSlot({"lazy":"","sizes":[[300,250],[336,280],[468,60],"fluid"],"slotId":"google_afc_user_container_0","unit":"/4374287/blog_user"});
+    v.sealDFPSlots();
+  });
+</script>
+
+  
+
+  
+<script src="https://platform.twitter.com/js/moment~timeline~tweet.4b4530aef3cb5159868348e8a492de60.js" charset="utf-8"></script><script src="https://platform.twitter.com/js/tweet.d9fbeaac3a8ebd6a63dcb70064957d89.js" charset="utf-8"></script><script src="https://platform.twitter.com/js/button.a9e51eea566eab199c00950f37200d0b.js" charset="utf-8"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" type="text/javascript" async=""></script><script src="//dmp.im-apps.net/js/6604/0001/itm.js" type="text/javascript" async=""></script><script src="https://www.googletagservices.com/tag/js/gpt.js" type="text/javascript" async=""></script><link href="https://adservice.google.co.jp/adsid/integrator.js?domain=nave-kazu.hatenablog.com" rel="preload" as="script"><script src="https://adservice.google.co.jp/adsid/integrator.js?domain=nave-kazu.hatenablog.com" type="text/javascript"></script><link href="https://adservice.google.com/adsid/integrator.js?domain=nave-kazu.hatenablog.com" rel="preload" as="script"><script src="https://adservice.google.com/adsid/integrator.js?domain=nave-kazu.hatenablog.com" type="text/javascript"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020050602.js" async=""></script><link href="https://e689ff953720c8bc31d1e0b30bd0b76a.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html" rel="prefetch"><link href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html" rel="prefetch"><script src="https://s.hatena.ne.jp/entries.json?no_comments=1&amp;uri=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;timestamp=1&amp;callback=Ten.JSONP.callback" type="text/javascript"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script src="//cdn.bigmining.com/private/js/hatena_bigmining.js" type="text/javascript" async=""></script></head>
+
+  <body class="page-entry category-/IT系 category-/Java">
+    
+
+    <div id="globalheader-container" data-brand="hatenablog">
+  <iframe height="37" id="globalheader" src="" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="http://nave-kazu.hatenablog.com/">なべ’s blog</a></h1>
+      
+    </div>
+  </div>
+</header>
+
+        
+
+        
+        
+
+
+
+
+<div class="hfeed" id="content">
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-5600 words-400 mode-hatena entry-odd" id="entry-10328749687198103198" data-publication-type="entry" data-uuid="10328749687198103198" data-keyword-campaign="">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="http://nave-kazu.hatenablog.com/archive/2016/12/12" rel="nofollow">
+      <time title="2016-12-12T08:14:45Z" datetime="2016-12-12T08:14:45Z" pubdate="">
+        <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">12</span><span class="hyphen">-</span><span class="date-day">12</span>
+      </time>
+    </a>
+  </div>
+  <h1 class="entry-title">
+  <a class="entry-title-link bookmark" href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445">Selenideを試した</a>
+</h1>
+
+  
+  
+
+  <div class="entry-categories categories">
+    
+    <a class="entry-category-link category-/IT系" href="http://nave-kazu.hatenablog.com/archive/category/%2FIT%E7%B3%BB">/IT系</a>
+    
+    <a class="entry-category-link category-/Java" href="http://nave-kazu.hatenablog.com/archive/category/%2FJava">/Java</a>
+    
+  </div>
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content">
+  
+    <p>先日参加した <a href="http://www.java-users.jp/ccc2016fall/">JJUG CCC 2016 FALL</a> で、うらがみさんがSelenideの発表をしていた。</p><iframe class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" frameborder="0" scrolling="no" allowfullscreen="true" style="padding: 0px; border: medium; border-image: none; width: 0px; height: 0px; display: block; visibility: hidden; position: absolute;" allowtransparency="true"></iframe><blockquote class="twitter-tweet twitter-tweet-error" data-lang="ja" data-twitter-extracted-i1589673241531515335="true"><p lang="ja" dir="ltr">明日は<a class="keyword" href="http://d.hatena.ne.jp/keyword/JJUG">JJUG</a> CCCでSelenideの話をします！最近全然画面作ってないから「実践する」から「実践したい」に改題したい！！！（しろめ） <a href="https://t.co/q64G2cm42m">https://t.co/q64G2cm42m</a> <a href="https://twitter.com/hashtag/ccc_c6?src=hash&amp;ref_src=twsrc%5Etfw">#ccc_c6</a></p>— うらがみ⛄ (@backpaper0) <a href="https://twitter.com/backpaper0/status/804659096175554560?ref_src=twsrc%5Etfw">2016年12月2日</a></blockquote><script src="//platform.twitter.com/widgets.js" charset="utf-8" async=""></script><p></p><p>これを拝聴して便利に感じたので試してみた。</p><p>スライドはこちら。<br>
+<a href="http://backpaper0.github.io/ghosts/try-selenide/index.html">Try Selenide</a><br>
+</p>
+
+<div class="section">
+    <h3>Selenideとは？</h3>
+    <p><a href="http://selenide.org/">Selenide</a>はSelenum WebDriverをラップしたブラウザテストの自動化<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>のこと。<br>
+<a href="http://www.seleniumhq.org/projects/webdriver/">Selenum WebDriver</a>は各種ブラウザのWebDriver <a class="keyword" href="http://d.hatena.ne.jp/keyword/API">API</a>を呼び出す、これも自動化<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF">フレームワーク</a>。<br>
+<a href="https://www.w3.org/TR/webdriver/">WebDriver</a>は<a class="keyword" href="http://d.hatena.ne.jp/keyword/W3C">W3C</a>規格なのでプロプラではなくオープンな<a class="keyword" href="http://d.hatena.ne.jp/keyword/API">API</a>と言える。</p><p>テスト対象のアプリからSelenum WebDriverをラップしたSelenideを呼び出し、Selenum WebDriverは各種ブラウザごとのWebDriverを呼び出すことで、ブラウザからテスト対象のアプリを実行する、というのが全体の流れ。<br>
+<span itemtype="http://schema.org/Photograph" itemscope=""><img title="f:id:nave_kazu:20161207152321p:plain" class="hatena-fotolife" alt="f:id:nave_kazu:20161207152321p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161207/20161207152321.png" itemprop="image"></span><br>
+</p>
+
+</div>
+<div class="section">
+    <h3>各種ブラウザのWebDriverを準備する</h3>
+    <p>Selenide/Selenum WebDriverを使うには、まずテスト対象の各種ブラウザのWebDriverを仕込まないとならない。</p><p>Selenum WebDriverのサイトに各種ブラウザのWebDriverダウンロード先が記載してあるので、そこから目的のブラウザのWebDriverをダウンロードする。<br>
+<a href="http://www.seleniumhq.org/download/#thirdPartyDrivers">Selenum WebDriver - Third Party Browser Drivers</a></p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>なら<a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a>。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>なら<a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a>。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>はSelenumが提供しているらしく、<a href="http://www.seleniumhq.org/download/">Selenum WebDriver - Downloads</a>の「The <a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a> Driver Server」にある。<br>
+Edgeからは<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>が提供しているらしく、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Microsoft">Microsoft</a>のサイト<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">WebDriver - Microsoft Edge Development</a> にある。</p><p>ダウンロードしたWebDriverは展開して適当なフォルダに保存する。<br>
+今回試したのは32bit <a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>環境なので、上のサイトから32bit <a class="keyword" href="http://d.hatena.ne.jp/keyword/Windows">Windows</a>用の<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>のWebDriverをダウンロードして「C:\SeleniumDriver」に保存した。</p>
+
+</div>
+<div class="section">
+    <h3>ビルド<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">スクリプト</a>の準備と依存関係の追加</h3>
+    <p>ビルド<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">スクリプト</a>を用意し、Selenideを含む関連するライブラリを依存関係に記述する。<br>
+関連するライブラリは、Selenide内で使用しているSLF4Jの実装と、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C3%B1%C2%CE%A5%C6%A5%B9%A5%C8">単体テスト</a>スイートとして<a class="keyword" href="http://d.hatena.ne.jp/keyword/JUnit">JUnit</a>になる。</p><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Maven">Maven</a>のpom.<a class="keyword" href="http://d.hatena.ne.jp/keyword/xml">xml</a>は下記の通り。</p>
+<pre class="code lang-xml" data-lang="xml" data-unlink=""><span class="synIdentifier">&lt;dependencies&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>org.slf4j<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>slf4j-simple<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>1.7.21<span class="synIdentifier">&lt;/version&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>junit<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>junit<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>4.12<span class="synIdentifier">&lt;/version&gt;</span>
+    <span class="synIdentifier">&lt;scope&gt;</span>test<span class="synIdentifier">&lt;/scope&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+  <span class="synIdentifier">&lt;dependency&gt;</span>
+    <span class="synIdentifier">&lt;groupId&gt;</span>com.codeborne<span class="synIdentifier">&lt;/groupId&gt;</span>
+    <span class="synIdentifier">&lt;artifactId&gt;</span>selenide<span class="synIdentifier">&lt;/artifactId&gt;</span>
+    <span class="synIdentifier">&lt;version&gt;</span>4.0<span class="synIdentifier">&lt;/version&gt;</span>
+    <span class="synIdentifier">&lt;scope&gt;</span>test<span class="synIdentifier">&lt;/scope&gt;</span>
+  <span class="synIdentifier">&lt;/dependency&gt;</span>
+<span class="synIdentifier">&lt;/dependencies&gt;</span>
+</pre><p>Gradleのbuild.gradleは下記の通り。</p>
+<pre class="code lang-groovy" data-lang="groovy" data-unlink="">dependencies {
+  compile <span class="synConstant">"org.slf4j:slf4j-simple:1.7.21"</span>
+  testCompile <span class="synConstant">"junit:junit:4.12"</span>
+  testCompile <span class="synConstant">"com.codeborne:selenide:4.0"</span>
+}
+</pre>
+</div>
+<div class="section">
+    <h3>テストクラスの用意とSelenide/Selenum WebDriverの設定</h3>
+    <p>まず<a class="keyword" href="http://d.hatena.ne.jp/keyword/JUnit">JUnit</a>から呼ばれるテストクラスを用意し、テストクラスの初期化メソッドを定義する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink=""><span class="synType">public</span> <span class="synType">class</span> AppTest {
+    <span class="synPreProc">@BeforeClass</span>
+    <span class="synType">public</span> <span class="synType">static</span> <span class="synType">void</span> beforeClass() <span class="synType">throws</span> Exception {
+    }
+}
+</pre><p>続いて初期化メソッドにSelenideとSelenum WebDriverの設定をする。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@BeforeClass</span>
+    <span class="synType">public</span> <span class="synType">static</span> <span class="synType">void</span> beforeClass() <span class="synType">throws</span> Exception {
+        <span class="synComment">// WebDriverのパスを設定</span>
+        System.setProperty(<span class="synConstant">"webdriver.ie.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">IEDriverServer.exe"</span>);
+        System.setProperty(<span class="synConstant">"webdriver.gecko.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">geckodriver.exe"</span>);
+        System.setProperty(<span class="synConstant">"webdriver.chrome.driver"</span>, <span class="synConstant">"C:</span><span class="synSpecial">\\</span><span class="synConstant">SeleniumDriver</span><span class="synSpecial">\\</span><span class="synConstant">chromedriver.exe"</span>);
+
+        <span class="synComment">// テスト結果の出力先</span>
+        Configuration.reportsFolder = <span class="synConstant">"test-result/reports"</span>;
+
+        <span class="synComment">// 使用するブラウザの指定</span>
+<span class="synComment">//        Configuration.browser = WebDriverRunner.INTERNET_EXPLORER;</span>
+<span class="synComment">//        Configuration.browser = WebDriverRunner.FIREFOX;</span>
+        Configuration.browser = WebDriverRunner.CHROME;
+    }
+</pre><p>System.setProperty()で、ダウンロードした<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>・<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>のWebDriverのパスを設定する。</p><p>Configuration.reportsFolderで、テスト結果（<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>など）の保存先を指定する。<br>
+今回は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>で指定しているので、テスト実行時のカレントフォルダにConfiguration.reportsFolderで指定したフォルダが作成される。</p><p>Configuration.browserで、テストするブラウザを指定する。WebDriverRunner.<a class="keyword" href="http://d.hatena.ne.jp/keyword/CHROME">CHROME</a>を指定しているので、テストを実行すると、chromedriver.exeを経由して<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>ブラウザが立ち上がってテストが行われる。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Internet%20Explorer">Internet Explorer</a>でテストする場合はWebDriverRunner.INTERNET_EXPLORERを指定して、<a class="keyword" href="http://d.hatena.ne.jp/keyword/Firefox">Firefox</a>でテストする場合はWebDriverRunner.<a class="keyword" href="http://d.hatena.ne.jp/keyword/FIREFOX">FIREFOX</a>を指定する。<br>
+（うらがみさんは使用するブラウザを実行時引数で指定していたので、その方法はうらがみさんのスライドを参照）</p>
+
+</div>
+<div class="section">
+    <h3>テストメソッドの用意</h3>
+    <p>今回は以下の手順のテストを行う。</p>
+
+<ul>
+<li><a href="http://www.yahoo.co.jp/">http://www.yahoo.co.jp/</a>にアクセスする</li>
+<li>検索ワードに「selenide」を入力する</li>
+<li>検索を実行する</li>
+<li>「selenide」の検索結果が出力されているか検証する</li>
+</ul><p>最後に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>を保存する。</p><p>まずはテストクラスにテストメソッドを用意する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+    }
+</pre><p>テスト対象のメソッドに@Testを付ける。</p><p><a href="http://www.yahoo.co.jp/">http://www.yahoo.co.jp/</a>にアクセスする処理を記述する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+    }
+</pre><p>staticインポートしたopen()メソッドにアクセスするURLを指定する。</p><p>次に、検索ワードに「selenide」を入力する処理を記述する。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Yahoo%21">Yahoo!</a>の検索ワードは下記のHTMLで表現されている。</p>
+<pre class="code lang-html" data-lang="html" data-unlink=""><span class="synIdentifier">&lt;</span><span class="synStatement">input</span><span class="synIdentifier"> </span><span class="synType">name</span><span class="synIdentifier">=</span><span class="synConstant">"p"</span><span class="synIdentifier"> </span><span class="synType">id</span><span class="synIdentifier">=</span><span class="synConstant">"srchtxt"</span><span class="synIdentifier"> </span><span class="synType">type</span><span class="synIdentifier">=</span><span class="synConstant">"text"</span><span class="synIdentifier"> </span><span class="synType">value</span><span class="synIdentifier">=</span><span class="synConstant">""</span><span class="synIdentifier">&gt;</span>
+</pre><p>なので、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BB%A5%EC%A5%AF%A5%BF">セレクタ</a>でID「srchtxt」を検索し、そこに値「selenide」を入れる処理を記述することになる。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+    }
+</pre><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/jQuery">jQuery</a>風の$メソッドでDOM要素を選択して、val()メソッドで値を入れる。</p><p>さらに、検索を実行する処理を記述する。<br>
+<a class="keyword" href="http://d.hatena.ne.jp/keyword/Yahoo%21">Yahoo!</a>の検索ボタンは下記のHTMLで表現されている。</p>
+<pre class="code lang-html" data-lang="html" data-unlink=""><span class="synIdentifier">&lt;/</span><span class="synStatement">label</span><span class="synIdentifier">&gt;&lt;</span><span class="synStatement">input</span><span class="synIdentifier"> </span><span class="synType">type</span><span class="synIdentifier">=</span><span class="synConstant">"submit"</span><span class="synIdentifier"> </span><span class="synType">id</span><span class="synIdentifier">=</span><span class="synConstant">"srchbtn"</span><span class="synIdentifier"> </span><span class="synType">class</span><span class="synIdentifier">=</span><span class="synConstant">"srchbtn"</span><span class="synIdentifier"> </span><span class="synType">value</span><span class="synIdentifier">=</span><span class="synConstant">"検索"</span><span class="synIdentifier">&gt;</span>
+</pre><p>先ほどと同様に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BB%A5%EC%A5%AF%A5%BF">セレクタ</a>でID「srchbtn」を検索し、クリックを実行するclick()メソッドを呼び出す。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+    }
+</pre><p>その後、検索結果のHTMLのbody部に「selenide」の検索結果が出力されているか確認する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+
+        $(<span class="synConstant">"body"</span>).shouldHave(text(<span class="synConstant">"Selenide: concise UI tests in Java - このページを和訳"</span>));
+    }
+</pre><p>最後に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>を保存する。</p>
+<pre class="code lang-java" data-lang="java" data-unlink="">    <span class="synPreProc">@Test</span>
+    <span class="synType">public</span> <span class="synType">void</span> selenideTest() <span class="synType">throws</span> Exception {
+        open(<span class="synConstant">"http://www.yahoo.co.jp/"</span>);
+        $(<span class="synConstant">"#srchtxt"</span>).val(<span class="synConstant">"selenide"</span>);
+        $(<span class="synConstant">"#srchbtn"</span>).click();
+
+        $(<span class="synConstant">"body"</span>).shouldHave(text(<span class="synConstant">"Selenide: concise UI tests in Java - このページを和訳"</span>));
+        screenshot(<span class="synConstant">"selenideTest"</span>);
+    }
+</pre><p>今回は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%C1%EA%C2%D0%A5%D1%A5%B9">相対パス</a>で指定しているので、テスト実行時のカレントフォルダにConfiguration.reportsFolderで指定したフォルダが作成される。</p>
+
+</div>
+<div class="section">
+    <h3>テストの実行</h3>
+    <p><a class="keyword" href="http://d.hatena.ne.jp/keyword/Maven">Maven</a>で実行する場合、下記を実行する。</p>
+<pre class="code lang-dosbatch" data-lang="dosbatch" data-unlink="">mvn test
+</pre><p>Gradleで実行する場合、下記を実行する。</p>
+<pre class="code lang-dosbatch" data-lang="dosbatch" data-unlink="">gradle test
+</pre><p>どちらの場合でも、ブラウザが立ち上がって（今回の場合は<a class="keyword" href="http://d.hatena.ne.jp/keyword/Chrome">Chrome</a>）、検索ワード「selenide」を入れて、検索して、検索結果が表示されて、ブラウザが終了してテストが正常終了すると思う。</p><p>テスト結果を保存しているはずなので、カレントフォルダの「test-result/reports」を見てみると、「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」と「selenideTest.html」が出来ている。<br>
+「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8">スクリーンショット</a>の画像イメージで、「selenideTest.html」はその時のHTML。両方撮ってくれる。</p><p>「selenideTest.<a class="keyword" href="http://d.hatena.ne.jp/keyword/png">png</a>」はこんな感じ。<br>
+<span itemtype="http://schema.org/Photograph" itemscope=""><img title="f:id:nave_kazu:20161212113408p:plain" class="hatena-fotolife" alt="f:id:nave_kazu:20161212113408p:plain" src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nave_kazu/20161212/20161212113408.png" itemprop="image"></span></p><p></p>
+
+</div>
+<div class="section">
+    <h3>最後に</h3>
+    <p>駆け足に試したが、Selenideいいね。<br>
+今後も使うと思う。</p><p>うらがみさんのスライドの中では他に、ページオブジェクトパターンや<a class="keyword" href="http://d.hatena.ne.jp/keyword/Selenium">Selenium</a>が提供しているDockerイメージを使ったテストなども紹介している。<br>
+これらも試してみようと思う。</p>
+
+</div>
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <p class="entry-footer-section">
+  <span class="author vcard"><span class="fn" data-user-name="nave_kazu" data-load-nickname="1">nave_kazu</span></span>
+  <span class="entry-footer-time"><a href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"><time title="2016-12-12T08:14:45Z" class="updated" datetime="2016-12-12T08:14:45Z" pubdate="" data-relative="">3年前</time></a></span>
+</p>
+
+    
+  <div class="hatena-star-container">
+  <span class="hatena-star-comment-container"><img tabindex="0" title="Comments" class="hatena-star-comment-button" style="margin: 0px; padding: 0px; border: medium; border-image: none; vertical-align: middle; display: none; cursor: pointer;" alt="Comments" src="https://s.hatena.ne.jp/images/comment.gif"></span><span class="hatena-star-star-container"><img tabindex="0" title="Add Star" class="hatena-star-add-button" style="margin: 0px 3px; padding: 0px; border: medium; border-image: none; vertical-align: middle; cursor: pointer;" alt="Add Star" src="https://cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.svg?version=ca057f7d39f4cbf0098502c82262628b"><a href="//blog.hatena.ne.jp/kyohei-yaa/"><span class="hatena-big-star-star-container"><img tabindex="0" class="hatena-star-user" style="padding: 0px; border: medium; border-image: none;" src="https://cdn.profile-image.st-hatena.com/users/kyohei-yaa/profile.png"><img tabindex="0" title="" class="hatena-star-star" style="padding: 0px; border: medium; border-image: none;" alt="kyohei-yaa" src="https://s.hatena.ne.jp/images/star.gif"></span></a><a href="//blog.hatena.ne.jp/siwamot/"><span class="hatena-big-star-star-container"><img tabindex="0" class="hatena-star-user" style="padding: 0px; border: medium; border-image: none;" src="https://cdn.profile-image.st-hatena.com/users/siwamot/profile.png"><img tabindex="0" title="" class="hatena-star-star" style="padding: 0px; border: medium; border-image: none;" alt="siwamot" src="https://s.hatena.ne.jp/images/star.gif"></span></a></span></div>
+  <div class="hatena-star-metadata" style="display: none">
+    <a class="hatena-star-permalink" href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445">Selenideを試した</a>
+  </div>
+
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <iframe width="84" height="40" title="この記事をはてなブックマークに追加" class="hatena-bookmark-button-frame" src="javascript:false" frameborder="0" scrolling="no" style="width: 84px; height: 40px;"></iframe>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-href="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445" data-layout="box_count" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="width: 69px; height: 40px; vertical-align: bottom;"><iframe name="fb933df5b1efac" width="1000px" height="1000px" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/v2.7/plugins/share_button.php?app_id=719729204785177&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df9b2d7c6d5c8c%26domain%3Dnave-kazu.hatenablog.com%26origin%3Dhttp%253A%252F%252Fnave-kazu.hatenablog.com%252Ff1bd0714d6b3f9%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey" frameborder="0" scrolling="no" allowfullscreen="true" style="border: medium; border-image: none; width: 69px; height: 40px; visibility: visible;" allowtransparency="true" data-testid="fb:share_button Facebook Social Plugin" allow="encrypted-media"></iframe></span></div>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <iframe title="Twitter Tweet Button" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" id="twitter-widget-1" src="https://platform.twitter.com/widgets/tweet_button.2a008290075125adde2d7b849b06a0bb.ja.html#dnt=false&amp;id=twitter-widget-1&amp;lang=ja&amp;original_referer=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445&amp;size=m&amp;text=Selenide%E3%82%92%E8%A9%A6%E3%81%97%E3%81%9F%20-%20%E3%81%AA%E3%81%B9%E2%80%99s%20blog&amp;time=1589673243179&amp;type=share&amp;url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 75px; height: 20px; visibility: visible; position: static;" allowtransparency="true" data-url="http://nave-kazu.hatenablog.com/entry/2016/12/12/171445"></iframe>
+    </div>
+  
+  
+  
+  
+</div>
+
+    
+  
+  
+    
+    <div class="google-afc-image test-google-rectangle-ads">      
+      
+      <div class="google-afc-user-container google_afc_blocklink2_5 google_afc_boder" id="google_afc_user_container_0" data-test-unit="/4374287/blog_user" data-google-query-id="CObt3afKuekCFZOXvQodyccPSA"><div id="google_ads_iframe_/4374287/blog_user_0__container__" style="border: 0pt; border-image: none;"><iframe name="google_ads_iframe_/4374287/blog_user_0" width="300" height="250" title="3rd party ad content" id="google_ads_iframe_/4374287/blog_user_0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: 0px; border-image: none; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true"></iframe></div></div>
+      
+        <a class="open-pro-modal" href="http://blog.hatena.ne.jp/guide/pro" data-guide-pro-modal-ad-url="https://hatenablog.com/guide/pro/modal/ad">広告を非表示にする</a>
+      
+    </div>
+  
+  
+
+
+    <div class="customized-footer">
+      
+
+        
+
+        
+
+          <div class="entry-footer-modules" id="entry-footer-secondary-modules">      
+<div class="hatena-module hatena-module-related-entries">
+      
+  <!-- Hatena-Epic-has-related-entries-with-elasticsearch:true -->
+  <div class="hatena-module-title">
+    関連記事
+  </div>
+  <div class="hatena-module-body">
+    <ul class="related-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">
+  <img width="100" title="AnacondaでPython（データ解析の真似事）" class="urllist-image related-entries-image" alt="AnacondaでPython（データ解析の真似事）" src="https://cdn.image.st-hatena.com/image/square/7f2bcc92c609a9fa5a71d60b002c1dc919118709/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20170307%2F20170307171954.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2017/03/07" rel="nofollow">
+    <time title="2017-03-07T08:54:14Z" datetime="2017-03-07T08:54:14Z" pubdate="">
+      2017-03-07
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">AnacondaでPython（データ解析の真似事）</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">AnacondaでPython環境を作って、データ解析の真似事としてタイ…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428">
+  <img width="100" title="JavaFXで印刷" class="urllist-image related-entries-image" alt="JavaFXで印刷" src="https://cdn.image.st-hatena.com/image/square/37964c76b23d5f87140ffacba74bbee568e1d251/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20170106%2F20170106185642.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2017/01/06" rel="nofollow">
+    <time title="2017-01-06T12:14:28Z" datetime="2017-01-06T12:14:28Z" pubdate="">
+      2017-01-06
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428">JavaFXで印刷</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">年賀状印刷をMS Word+MS Excelの組み合わせでやっていたが、毎…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721">
+  <img width="100" title="JJUG CCC 2016 FALLに参加してきた #jjug_ccc" class="urllist-image related-entries-image" alt="JJUG CCC 2016 FALLに参加してきた #jjug_ccc" src="https://cdn.image.st-hatena.com/image/square/97f982d5e212944c279fe10965b17ba084f04d17/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20161205%2F20161205174624.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2016/12/05" rel="nofollow">
+    <time title="2016-12-05T08:47:21Z" datetime="2016-12-05T08:47:21Z" pubdate="">
+      2016-12-05
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721">JJUG CCC 2016 FALLに参加してきた #jjug_ccc</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">半年ごとの恒例イベントJJUG CCCの、2016年秋の会「JJUG CCC 20…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2016/09/07" rel="nofollow">
+    <time title="2016-09-07T05:19:02Z" datetime="2016-09-07T05:19:02Z" pubdate="">
+      2016-09-07
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2016/09/07/141902">Linux (CentOS 7) で GitBucket を動かす</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">開発サーバーにGitBucketを入れたので、その手順をメモする。 …</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+                      <a class="urllist-image-link related-entries-image-link" href="http://nave-kazu.hatenablog.com/entry/2015/05/13/010712">
+  <img width="100" title="GitBucket 3.2 を試す" class="urllist-image related-entries-image" alt="GitBucket 3.2 を試す" src="https://cdn.image.st-hatena.com/image/square/f070e63d9e936b5cef0d3fc16e52b572c6d9b9fe/backend=imagemagick;height=100;version=1;width=100/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnave_kazu%2F20150513%2F20150513010540.png">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="http://nave-kazu.hatenablog.com/archive/2015/05/13" rel="nofollow">
+    <time title="2015-05-12T16:07:12Z" datetime="2015-05-12T16:07:12Z" pubdate="">
+      2015-05-13
+    </time>
+  </a>
+</div>
+
+          <a class="urllist-title-link related-entries-title-link  urllist-title related-entries-title" href="http://nave-kazu.hatenablog.com/entry/2015/05/13/010712">GitBucket 3.2 を試す</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">「Scalaで実装されたオープンソースのGitHubクローン」のGitBuc…</div>
+      </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+  </div>
+        
+
+      
+    </div>
+    
+  <div class="comment-box">
+    
+    <ul class="comment">
+      <li class="read-more-comments" style="display: none;"><a>もっと読む</a></li>
+    </ul>
+    
+      <a class="leave-comment-title js-leave-comment-title" style="display: none;">コメントを書く</a>
+    
+  </div>
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="http://nave-kazu.hatenablog.com/entry/2017/01/06/211428" rel="prev">
+          <span class="pager-arrow">« </span>
+          JavaFXで印刷
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="http://nave-kazu.hatenablog.com/entry/2016/12/05/174721" rel="next">
+          JJUG CCC 2016 FALLに参加してきた #jjug_…
+          <span class="pager-arrow"> »</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    プロフィール
+  </div>
+  <div class="hatena-module-body">
+    
+    <a class="profile-icon-link" href="http://nave-kazu.hatenablog.com/about">
+      <img class="profile-icon" alt="id:nave_kazu" src="https://cdn.profile-image.st-hatena.com/users/nave_kazu/profile.png">
+    </a>
+    
+
+    
+    <span class="id">
+      <a class="hatena-id-link" href="http://nave-kazu.hatenablog.com/about"><span data-user-name="nave_kazu" data-load-nickname="1">id:nave_kazu</span></a>
+      
+  
+    
+    
+  
+
+
+    </span>
+    
+
+    
+
+    
+
+    
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a class="hatena-follow-button js-hatena-follow-button unsubscribing" href="#">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-once="" data-track-name="profile-widget-subscribe-button">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">4</span>
+  </div>
+</div>
+
+    
+
+    
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://nave-kazu.hatenablog.com/search" method="get">
+  <input name="q" class="search-module-input" required="" type="text" placeholder="記事を検索" value="">
+  <input class="search-module-button" type="submit" value="検索">
+</form>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://hatenablog.com/">はてなブログ</a>
+        </li>
+      
+        <li>
+          <a href="https://hatenablog.com/guide?via=200109">ブログをはじめる</a>
+        </li>
+      
+        <li>
+          <a href="http://blog.hatenablog.com">週刊はてなブログ</a>
+        </li>
+      
+        <li>
+          <a href="https://hatenablog.com/guide/pro">はてなブログPro</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://nave-kazu.hatenablog.com/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2018/10/12/161754">Gitのコマンドを使ってみる（その1）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/10/31/145707">Djangoを使ってみる （アプリケーションへのルーティング）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/10/26/141424">Djangoを使ってみる （準備）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/05/22/101345">JJUG CCC 2017 Spring に参加してきた</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          <a class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title" href="http://nave-kazu.hatenablog.com/entry/2017/03/07/175414">AnacondaでPython（データ解析の真似事）</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+      </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-url="http://nave-kazu.hatenablog.com/archive" data-archive-type="default">
+  <div class="hatena-module-title">
+    <a href="http://nave-kazu.hatenablog.com/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+  
+
+  
+    
+    
+      <ul class="hatena-urllist">
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2018">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2018">
+              2018 (1)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2018/10">
+                    2018 / 10 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2017">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2017">
+              2017 (6)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/10">
+                    2017 / 10 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/5">
+                    2017 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/3">
+                    2017 / 3 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2017/1">
+                    2017 / 1 (1)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year" data-year="2016">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2016">
+              2016 (10)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/12">
+                    2016 / 12 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/11">
+                    2016 / 11 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/9">
+                    2016 / 9 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/7">
+                    2016 / 7 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/5">
+                    2016 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2016/2">
+                    2016 / 2 (2)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+          <li class="archive-module-year archive-module-year-hidden" data-year="2015">
+            <div class="archive-module-button">
+              <span class="archive-module-hide-button">▼</span>
+              <span class="archive-module-show-button">▶</span>
+            </div>
+            <a class="archive-module-year-title" href="http://nave-kazu.hatenablog.com/archive/2015">
+              2015 (22)
+            </a>
+            <ul class="archive-module-months">
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/12">
+                    2015 / 12 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/11">
+                    2015 / 11 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/7">
+                    2015 / 7 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/6">
+                    2015 / 6 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/5">
+                    2015 / 5 (1)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/4">
+                    2015 / 4 (4)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/3">
+                    2015 / 3 (4)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/2">
+                    2015 / 2 (2)
+                  </a>
+                </li>
+              
+                <li class="archive-module-month">
+                  <a class="archive-module-month-title" href="http://nave-kazu.hatenablog.com/archive/2015/1">
+                    2015 / 1 (6)
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      </ul>
+    
+  
+
+
+</div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+        
+
+        
+
+      </div>
+    </div>
+    
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div class="guest-footer js-guide-register test-blogs-register-guide" style="display: block !important;" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>nave_kazuさんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="http://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div class="guest-footer-btn">
+        <a href="https://hatenablog.com/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="http://nave-kazu.hatenablog.com/">
+        <img width="16" height="16" alt="なべ’s blog" src="https://cdn.blog.st-hatena.com/images/admin/blog-icon-noimage.png">
+        <span class="footer-address-name">なべ’s blog</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatenablog.com/">Hatena Blog</a>
+      |
+        <a class="report-abuse-link test-report-abuse-link" href="https://blog.hatena.ne.jp/-/abuse_report?target_url=http%3A%2F%2Fnave-kazu.hatenablog.com%2Fentry%2F2016%2F12%2F12%2F171445" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+    
+
+    
+  <script src="https://s.hatena.ne.jp/js/HatenaStar.js?20191001"></script>
+
+
+    
+      <div class=" fb_reset" id="fb-root"><div style="top: -10000px; width: 0px; height: 0px; position: absolute;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+    
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-star" style="display: block;">
+    <i title="引用スターをつける" class="blogicon-star"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock" style="display: block;">
+    <i title="引用をストック" class="blogicon-quote"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-once="" data-track-name="quote-tweet"><i title="引用してツイートする" class="blogicon-twitter"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script id="js-requote-button-template" type="x-underscore-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    
+    <div id="hidden-subscribe-button" style="display: none;">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a class="hatena-follow-button js-hatena-follow-button unsubscribing" href="#">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-once="" data-track-name="profile-widget-subscribe-button">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">4</span>
+  </div>
+</div>
+
+    </div>
+
+    
+  <script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+<script src="https://b.st-hatena.com/js/bookmark_button.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.min.js?version=1.12.3" type="text/javascript"></script>
+<script src="https://cdn7.www.st-hatena.com/js/jquery/jquery-ui.1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.js?version=0.8.3" type="text/javascript"></script>
+<script src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.time.js?version=0.8.3" type="text/javascript"></script>
+<script id="vendor-js" src="https://cdn.blog.st-hatena.com/js/vendor.js?version=5e98d460b6e06a25ebcfb66462c0677cc6ba1e74&amp;env=production" type="text/javascript" crossorigin="anonymous" data-env="production"></script>
+
+
+
+
+
+<script src="https://cdn.blog.st-hatena.com/js/texts-ja.js?version=4f7b1504ef55977117a723913170de72dfa5d612&amp;env=production" type="text/javascript"></script>
+<script id="hatenablog-js" src="https://cdn.blog.st-hatena.com/js/hatenablog.js?version=0928ba2e102fc78c430c899c167406f7b07777c5&amp;env=production" type="text/javascript" crossorigin="anonymous" data-env="production"></script><div style="left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed;"></div>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" defer="" async=""></script>
+
+
+
+
+
+
+    
+  <script id="valve-dmp" src="https://cdn.pool.st-hatena.com/valve/dmp.js" async="" data-test-id="dmpjs" data-service="blog"></script>
+
+
+    
+
+
+
+
+
+  
+
+
+<iframe title="Twitter settings iframe" src="https://platform.twitter.com/widgets/widget_iframe.2a008290075125adde2d7b849b06a0bb.html?origin=http%3A%2F%2Fnave-kazu.hatenablog.com" frameborder="0" scrolling="no" style="display: none;" allowtransparency="true"></iframe><div id="cboxOverlay" style="display: none;"></div><div tabindex="-1" id="colorbox" role="dialog" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button id="cboxPrevious" type="button"></button><button id="cboxNext" type="button"></button><button id="cboxSlideshow" type="button"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="width: 9999px; display: none; visibility: hidden; position: absolute; max-width: none;"></div></div><div style="top: -9999px; z-index: -9999;"></div><iframe id="criteo-syncframe" src='https://gum.criteo.com/syncframe?topUrl=nave-kazu.hatenablog.com#{"optout":{"value":false,"origin":0},"uid":{"origin":0},"idfs":{"origin":0},"sid":{"origin":0},"origin":"publishertag","version":89,"lwid":{"origin":0},"tld":"hatenablog.com","bundle":{"value":"5gOp_F80cjc2YUcxYVhWVWFTb2dwNzFuT3NWQzl5bjlNbSUyRlh5JTJCakx2ZVJ2JTJGUDhNJTJGQmJKRzZXemhHOE9XclFhY2pWcWdBalhRZFdYR0ljNEpzZzJKVzI2bFpDeVpqWjVCTmdlWDAzJTJCV2tLRTBCMDN0ZERLakclMkIydnUlMkZQRXVqQmhBSXdDZElxajdwcWhoMDY2a1NuWkZXeGlTQXZnZ0doZGw2VDNVUEVqVkJVMkpSMCUzRA","origin":3},"topUrl":"nave-kazu.hatenablog.com","cw":true}' style="display: none;"></iframe><iframe title="Twitter analytics iframe" id="rufous-sandbox" frameborder="0" scrolling="no" allowfullscreen="true" style="padding: 0px; border: medium; border-image: none; width: 0px; height: 0px; display: none; visibility: hidden; position: absolute;" allowtransparency="true"></iframe><script type="text/javascript">(function(a){var b=a.createElement("iframe"),c="https:"==a.location.protocol?"https://":"http://";b.src=c+"cf.im-apps.net/imid/beacon.html";b.style.display="none";a.body.appendChild(b)})(document);</script><iframe src="http://cf.im-apps.net/imid/beacon.html" style="display: none;"></iframe><script src="//cdn.audiencedata.net/js/v1/pageview.js?owner_id=hatena&amp;site_id=hatena" type="text/javascript"></script><script type="text/javascript">!function(c,d,b,f){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["td_send","td_send_imid"];a<e.length;a++)d[c].prototype[e[a]]=function(a){return function(){this["tmp_"+a]=this["tmp_"+a]||[];this["tmp_"+a].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(f)[0];b=b.createElement(f);b.async=!0;b.src="//cf.im-apps.net/sdk/tdim-1.1.0.min.js";a.parentNode.insertBefore(b,a)}}("TDIM",window,document,"script");
+var tdimjs=new TDIM;tdimjs.debug=!1;tdimjs.td_host="in.ybi.idcfcloud.net";tdimjs.td_api_key="312/b4f0042d7c26b4f44d2561bbb5c396349b54b10e";tdimjs.td_db="cosmi_6604";tdimjs.im_api_token="TlOjMPj_m54xiIkb8Mzm7Q";tdimjs.td_send_imid("pageviews",{custom_data:"undefined"});</script></body></html>
